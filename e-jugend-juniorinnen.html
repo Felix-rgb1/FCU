@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Jugend Juniorinnen - FC Unterensingen</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'fcu-dark': '#000000',
+                        'fcu-blue': '#1a1a1a',
+                        'fcu-neon': '#ffffff',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-white text-gray-900">
+    
+    <!-- STICKY HEADER -->
+    <header class="sticky top-0 z-50 bg-fcu-dark text-white shadow-lg">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-20">
+            <a href="index.html" class="flex items-center space-x-2">
+                <div class="w-12 h-12 bg-fcu-neon rounded-lg flex items-center justify-center font-bold text-fcu-dark text-xl">
+                    FCU
+                </div>
+                <span class="text-xl font-bold hidden sm:inline">FC Unterensingen</span>
+            </a>
+
+            <div class="hidden md:flex space-x-8">
+                <a href="index.html#news" class="hover:text-fcu-neon transition-colors font-medium">News</a>
+                <a href="index.html#teams-jugend" class="hover:text-fcu-neon transition-colors font-medium">Teams</a>
+                <a href="index.html#schedule" class="hover:text-fcu-neon transition-colors font-medium">Spielplan</a>
+                <a href="index.html#club" class="hover:text-fcu-neon transition-colors font-medium">Verein</a>
+                <a href="index.html#contact" class="hover:text-fcu-neon transition-colors font-medium">Kontakt</a>
+            </div>
+
+            <button id="mobile-menu-btn" class="md:hidden text-fcu-neon text-2xl">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-fcu-blue border-t border-fcu-neon">
+            <div class="px-4 py-4 space-y-3">
+                <a href="index.html#news" class="block hover:text-fcu-neon transition-colors">News</a>
+                <a href="index.html#teams-jugend" class="block hover:text-fcu-neon transition-colors">Teams</a>
+                <a href="index.html#schedule" class="block hover:text-fcu-neon transition-colors">Spielplan</a>
+                <a href="index.html#club" class="block hover:text-fcu-neon transition-colors">Verein</a>
+                <a href="index.html#contact" class="block hover:text-fcu-neon transition-colors">Kontakt</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="relative h-96 bg-gradient-to-r from-fcu-dark via-fcu-blue to-fcu-dark flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 bg-cover bg-center opacity-20" style="background-image: url('https://images.unsplash.com/photo-1461896836934-ffe607ba8211?w=1200&h=800&fit=crop');"></div>
+        
+        <div class="relative z-10 text-center px-4">
+            <h1 class="text-5xl md:text-6xl font-black text-white mb-4">
+                ⚽ <span class="text-fcu-neon">E-Jugend Juniorinnen</span>
+            </h1>
+            <p class="text-xl text-gray-200 mb-4">U12/U13 | 16 Spielerinnen</p>
+            <p class="text-lg text-gray-300">Frauenfußball</p>
+        </div>
+    </section>
+
+    <!-- CONTENT -->
+    <section class="py-20 px-4 bg-gray-50">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-3 gap-8 mb-16">
+                <!-- Info Card -->
+                <div class="bg-white p-8 rounded-lg shadow-lg border-l-4 border-fcu-neon">
+                    <h3 class="text-2xl font-black text-fcu-dark mb-4 flex items-center">
+                        <i class="fas fa-info-circle mr-3 text-fcu-neon"></i> Alter
+                    </h3>
+                    <p class="text-4xl font-black text-fcu-neon mb-2">U12/U13</p>
+                    <p class="text-gray-600">Jahrgänge 2012/2013</p>
+                </div>
+
+                <!-- Squad Card -->
+                <div class="bg-white p-8 rounded-lg shadow-lg border-l-4 border-fcu-neon">
+                    <h3 class="text-2xl font-black text-fcu-dark mb-4 flex items-center">
+                        <i class="fas fa-users mr-3 text-fcu-neon"></i> Spielerinnen
+                    </h3>
+                    <p class="text-4xl font-black text-fcu-neon mb-2">16</p>
+                    <p class="text-gray-600">Aktive Spielerinnen</p>
+                </div>
+
+                <!-- Contact Card -->
+                <div class="bg-white p-8 rounded-lg shadow-lg border-l-4 border-fcu-neon">
+                    <h3 class="text-2xl font-black text-fcu-dark mb-4 flex items-center">
+                        <i class="fas fa-envelope mr-3 text-fcu-neon"></i> Jugendleitung
+                    </h3>
+                    <a href="mailto:jugend@fcunterensingen.de" class="text-fcu-neon font-bold hover:underline">
+                        jugend@fcunterensingen.de
+                    </a>
+                    <p class="text-gray-600 text-sm mt-2">Fragen zur Mannschaft</p>
+                </div>
+            </div>
+
+            <!-- Über die Mannschaft -->
+            <div class="bg-white p-12 rounded-lg shadow-lg mb-16">
+                <h2 class="text-3xl font-black text-fcu-dark mb-6">Über die E-Jugend Juniorinnen</h2>
+                <div class="space-y-4 text-gray-700">
+                    <p>Die E-Jugend Juniorinnen ist unsere Grundlagenmannschaft im Frauenfußball. Mit 16 talentierten jungen Spielerinnen trainieren wir mit modernen Methoden und vermitteln die Grundlagen des Fußballs.</p>
+                    
+                    <p><strong>Trainingstage:</strong> Dienstag & Freitag (17:30 - 18:45 Uhr)</p>
+                    <p><strong>Trainingsort:</strong> Stadion Unterensingen</p>
+                    
+                    <p>Im Fokus steht die positive Entwicklung der Spielerinnen, die Vermittlung von Spaß am Spiel und die solide Ausbildung technischer sowie taktischer Grundlagen. Wir möchten unsere Juniorinnen für die nächsten Altersklassen vorbereiten.</p>
+                </div>
+            </div>
+
+            <!-- Trainer -->
+            <div class="bg-fcu-dark text-white p-12 rounded-lg shadow-lg mb-16">
+                <h2 class="text-3xl font-black mb-8">👨‍🏫 Trainer & Betreuer</h2>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="bg-fcu-blue p-6 rounded-lg">
+                        <p class="text-xl font-black text-fcu-neon mb-2">Trainerin 1</p>
+                        <p class="text-gray-300">Cheftrainerin & Grundlagen</p>
+                        <p class="text-sm text-gray-400 mt-3">Spezialisiert auf U12/U13</p>
+                    </div>
+                    <div class="bg-fcu-blue p-6 rounded-lg">
+                        <p class="text-xl font-black text-fcu-neon mb-2">Trainer 2</p>
+                        <p class="text-gray-300">Co-Trainer & Spiele</p>
+                        <p class="text-sm text-gray-400 mt-3">Erfahrener Trainer</p>
+                    </div>
+                    <div class="bg-fcu-blue p-6 rounded-lg">
+                        <p class="text-xl font-black text-fcu-neon mb-2">Betreuerin 1</p>
+                        <p class="text-gray-300">Spielerbetreuung</p>
+                        <p class="text-sm text-gray-400 mt-3">Jugendhelfer</p>
+                    </div>
+                    <div class="bg-fcu-blue p-6 rounded-lg">
+                        <p class="text-xl font-black text-fcu-neon mb-2">Betreuer 2</p>
+                        <p class="text-gray-300">Organisatorische Unterstützung</p>
+                        <p class="text-sm text-gray-400 mt-3">Helfer</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Spielplan -->
+            <div class="bg-white p-12 rounded-lg shadow-lg mb-16">
+                <h2 class="text-3xl font-black text-fcu-dark mb-8">📅 Spielplan</h2>
+                
+                <div class="mb-8">
+                    <label class="block text-sm font-bold text-fcu-dark mb-2">Zeitraum:</label>
+                    <div class="flex gap-4 items-end">
+                        <div class="flex-1">
+                            <input type="date" id="dateFrom-ejj" class="w-full px-4 py-2 border-2 border-fcu-neon rounded" value="2026-03-01">
+                        </div>
+                        <div class="flex-1">
+                            <input type="date" id="dateTo-ejj" class="w-full px-4 py-2 border-2 border-fcu-neon rounded" value="2026-03-31">
+                        </div>
+                        <button onclick="updateJugendSchedule('e-jugend-juniorinnen')" class="bg-fcu-neon text-fcu-dark px-6 py-2 font-bold hover:bg-yellow-300" style="clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 100%, 8px 100%);">
+                            <i class="fas fa-filter mr-2"></i> Filter
+                        </button>
+                    </div>
+                </div>
+
+                <div class="overflow-x-auto">
+                    <iframe 
+                        id="fussball-de-e-jugend-juniorinnen" 
+                        src="https://www.fussball.de/widget/verein/vereinsspielplan/fc-unterensingen-1993-ev?datum_von=2026-03-01&datum_bis=2026-03-31" 
+                        width="100%" 
+                        height="500" 
+                        frameborder="0" 
+                        scrolling="no"
+                        style="border: 1px solid #ddd; border-radius: 8px;">
+                    </iframe>
+                </div>
+
+                <div class="mt-6">
+                    <a href="https://www.fussball.de/verein/fc-unterensingen-1993-ev/5219179" target="_blank" class="inline-block bg-fcu-neon text-fcu-dark px-6 py-3 font-bold hover:bg-yellow-300 transition-all">
+                        <i class="fas fa-external-link-alt mr-2"></i> Auf Fussball.de anschauen
+                    </a>
+                </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="bg-fcu-blue text-white p-8 rounded-lg">
+                <h3 class="text-2xl font-black mb-6">🔗 Weitere Mannschaften</h3>
+                <div class="grid md:grid-cols-3 gap-4">
+                    <a href="index.html#teams-frauen" class="bg-fcu-dark hover:bg-fcu-neon hover:text-fcu-dark p-4 rounded font-bold transition-all text-center">Frauenmannschaft</a>
+                    <a href="c-jugend-juniorinnen.html" class="bg-fcu-dark hover:bg-fcu-neon hover:text-fcu-dark p-4 rounded font-bold transition-all text-center">C-Jugend</a>
+                    <a href="d-jugend-juniorinnen.html" class="bg-fcu-dark hover:bg-fcu-neon hover:text-fcu-dark p-4 rounded font-bold transition-all text-center">D-Jugend</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-fcu-dark text-white py-12 border-t-4 border-fcu-neon mt-20">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h4 class="text-lg font-black text-fcu-neon mb-4">FC Unterensingen</h4>
+                    <p class="text-gray-400">Ein Dorf. Ein Team. Seit 1963.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-black mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="index.html" class="hover:text-fcu-neon transition-colors">Home</a></li>
+                        <li><a href="index.html#teams-jugend" class="hover:text-fcu-neon transition-colors">Jugend</a></li>
+                        <li><a href="index.html#schedule" class="hover:text-fcu-neon transition-colors">Spielplan</a></li>
+                        <li><a href="index.html#contact" class="hover:text-fcu-neon transition-colors">Kontakt</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-black mb-4">Rechtliches</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-fcu-neon transition-colors">Impressum</a></li>
+                        <li><a href="#" class="hover:text-fcu-neon transition-colors">Datenschutz</a></li>
+                        <li><a href="#" class="hover:text-fcu-neon transition-colors">AGB</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-black mb-4">Folge uns</h4>
+                    <div class="flex gap-4 text-2xl">
+                        <a href="https://www.facebook.com/p/FC-Unterensingen-1993-eV-100043269447266/" target="_blank" class="text-gray-400 hover:text-fcu-neon transition-colors">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="https://www.instagram.com/fc_unterensingen/" target="_blank" class="text-gray-400 hover:text-fcu-neon transition-colors">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="mailto:orga@fcunterensingen.de" class="text-gray-400 hover:text-fcu-neon transition-colors">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 pt-8 text-center text-gray-400">
+                <p>&copy; 2026 FC Unterensingen e.V. Alle Rechte vorbehalten.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function updateJugendSchedule(jugend) {
+            const dateFrom = document.getElementById(`dateFrom-${jugend}`).value;
+            const dateTo = document.getElementById(`dateTo-${jugend}`).value;
+            
+            if (dateFrom && dateTo) {
+                const iframe = document.getElementById(`fussball-de-${jugend}`);
+                if (iframe) {
+                    iframe.src = `https://www.fussball.de/widget/verein/vereinsspielplan/fc-unterensingen-1993-ev?datum_von=${dateFrom}&datum_bis=${dateTo}`;
+                }
+            }
+        }
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mitglieder & Downloads - FC Unterensingen</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'fcu-dark': '#000000',
+                        'fcu-blue': '#1a1a1a',
+                        'fcu-neon': '#ffffff',
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-white text-fcu-dark">
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-white shadow-md">
+        <nav class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-fcu-blue">FC Unterensingen</a>
+            <div class="hidden md:flex space-x-6">
+                <a href="index.html" class="hover:text-fcu-blue transition">Startseite</a>
+                <a href="vorstand.html" class="hover:text-fcu-blue transition">Vorstand</a>
+                <a href="mitglieder.html" class="text-fcu-neon font-semibold">Mitglieder</a>
+                <a href="jobs.html" class="hover:text-fcu-blue transition">Jobs</a>
+                <a href="#contact" class="hover:text-fcu-blue transition">Kontakt</a>
+            </div>
+            <button class="md:hidden text-2xl" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden bg-fcu-blue text-white">
+            <a href="index.html" class="block px-4 py-2 hover:bg-fcu-neon hover:text-fcu-dark">Startseite</a>
+            <a href="vorstand.html" class="block px-4 py-2 hover:bg-fcu-neon hover:text-fcu-dark">Vorstand</a>
+            <a href="mitglieder.html" class="block px-4 py-2 hover:bg-fcu-neon hover:text-fcu-dark">Mitglieder</a>
+            <a href="jobs.html" class="block px-4 py-2 hover:bg-fcu-neon hover:text-fcu-dark">Jobs</a>
+            <a href="#contact" class="block px-4 py-2 hover:bg-fcu-neon hover:text-fcu-dark">Kontakt</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-fcu-blue to-fcu-dark text-white py-20">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h1 class="text-5xl font-bold mb-4">👥 Mitglieder & Downloads</h1>
+            <p class="text-xl text-gray-300">Alle wichtigen Dokumente und Informationen für Mitglieder</p>
+        </div>
+    </section>
+
+    <!-- Intro Section -->
+    <section class="max-w-7xl mx-auto px-4 py-16">
+        <div class="bg-blue-50 p-8 rounded-lg border-l-4 border-fcu-neon">
+            <h2 class="text-3xl font-bold mb-4">Willkommen bei den FC Unterensingen Mitgliedern!</h2>
+            <p class="text-lg text-gray-700">
+                Auf dieser Seite findest du alle wichtigen Dokumente und Formulare für deine Mitgliedschaft 
+                im FC Unterensingen. Von der Anmeldung bis zu rechtlichen Dokumenten - hier ist alles übersichtlich 
+                zusammengestellt.
+            </p>
+        </div>
+    </section>
+
+    <!-- Downloads Section -->
+    <section class="max-w-7xl mx-auto px-4 py-16">
+        <h2 class="text-3xl font-bold mb-12 text-center">📥 Wichtige Dokumente zum Download</h2>
+        
+        <!-- Neue Mitgliedschaft -->
+        <div class="mb-12">
+            <h3 class="text-2xl font-bold text-fcu-blue mb-6 pb-2 border-b-2 border-fcu-neon">
+                <i class="fas fa-file-contract text-fcu-neon"></i> Neue Mitgliedschaft
+            </h3>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-white border-2 border-fcu-blue p-6 rounded-lg hover:shadow-lg transition">
+                    <h4 class="font-bold text-fcu-blue mb-2">
+                        <i class="fas fa-envelope text-fcu-neon"></i> Elternschreiben
+                    </h4>
+                    <p class="text-gray-600 mb-4">Informationen für Eltern neuer Mitglieder</p>
+                    <a href="https://fcunterensingen.de/" target="_blank" class="text-fcu-neon font-semibold hover:underline">
+                        Download PDF <i class="fas fa-download"></i>
+                    </a>
+                </div>
+                <div class="bg-white border-2 border-fcu-blue p-6 rounded-lg hover:shadow-lg transition">
+                    <h4 class="font-bold text-fcu-blue mb-2">
+                        <i class="fas fa-form"></i> Mitgliedsantrag
+                    </h4>
+                    <p class="text-gray-600 mb-4">Antrag zur Mitgliedschaft im FC Unterensingen</p>
+                    <a href="https://fcunterensingen.de/" target="_blank" class="text-fcu-neon font-semibold hover:underline">
+                        Download PDF <i class="fas fa-download"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Rechtliche Dokumente -->
+        <div class="mb-12">
+            <h3 class="text-2xl font-bold text-fcu-blue mb-6 pb-2 border-b-2 border-fcu-neon">
+                <i class="fas fa-gavel text-fcu-neon"></i> Rechtliche Dokumente
+            </h3>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-white border-2 border-fcu-blue p-6 rounded-lg hover:shadow-lg transition">
+                    <h4 class="font-bold text-fcu-blue mb-2">
+                        <i class="fas fa-shield-alt text-fcu-neon"></i> Datenschutzerklärung
+                    </h4>
+                    <p class="text-gray-600 mb-2">Stand: April 2023</p>
+                    <p class="text-gray-600 mb-4 text-sm">Schutz Ihrer persönlichen Daten</p>
+                    <a href="https://fcunterensingen.de/" target="_blank" class="text-fcu-neon font-semibold hover:underline">
+                        Download PDF <i class="fas fa-download"></i>
+                    </a>
+                </div>
+                <div class="bg-white border-2 border-fcu-blue p-6 rounded-lg hover:shadow-lg transition">
+                    <h4 class="font-bold text-fcu-blue mb-2">
+                        <i class="fas fa-file-alt text-fcu-neon"></i> Vereinssatzung
+                    </h4>
+                    <p class="text-gray-600 mb-4">Grundlegende Vereinsregeln und Richtlinien</p>
+                    <a href="https://fcunterensingen.de/" target="_blank" class="text-fcu-neon font-semibold hover:underline">
+                        Download PDF <i class="fas fa-download"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Finanzielle Dokumente -->
+        <div class="mb-12">
+            <h3 class="text-2xl font-bold text-fcu-blue mb-6 pb-2 border-b-2 border-fcu-neon">
+                <i class="fas fa-money-bill-wave text-fcu-neon"></i> Finanzielle Informationen
+            </h3>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-white border-2 border-fcu-blue p-6 rounded-lg hover:shadow-lg transition">
+                    <h4 class="font-bold text-fcu-blue mb-2">
+                        <i class="fas fa-receipt text-fcu-neon"></i> Beitragsordnung (ab 01.01.2023)
+                    </h4>
+                    <p class="text-gray-600 mb-4">Gültige Beitragssätze und Gebühren</p>
+                    <a href="https://fcunterensingen.de/" target="_blank" class="text-fcu-neon font-semibold hover:underline">
+                        Download PDF <i class="fas fa-download"></i>
+                    </a>
+                </div>
+                <div class="bg-white border-2 border-fcu-blue p-6 rounded-lg hover:shadow-lg transition">
+                    <h4 class="font-bold text-fcu-blue mb-2">
+                        <i class="fas fa-receipt text-fcu-neon"></i> Beitragsordnung (ab 01.07.2025)
+                    </h4>
+                    <p class="text-gray-600 mb-4">Neue Beitragssätze gültig ab Juli 2025</p>
+                    <a href="https://fcunterensingen.de/" target="_blank" class="text-fcu-neon font-semibold hover:underline">
+                        Download PDF <i class="fas fa-download"></i>
+                    </a>
+                </div>
+                <div class="bg-white border-2 border-fcu-blue p-6 rounded-lg hover:shadow-lg transition">
+                    <h4 class="font-bold text-fcu-blue mb-2">
+                        <i class="fas fa-file-invoice-dollar text-fcu-neon"></i> Finanzordnung
+                    </h4>
+                    <p class="text-gray-600 mb-4">Richtlinien für die Vereinsfinanzen</p>
+                    <a href="https://fcunterensingen.de/" target="_blank" class="text-fcu-neon font-semibold hover:underline">
+                        Download PDF <i class="fas fa-download"></i>
+                    </a>
+                </div>
+                <div class="bg-white border-2 border-fcu-blue p-6 rounded-lg hover:shadow-lg transition">
+                    <h4 class="font-bold text-fcu-blue mb-2">
+                        <i class="fas fa-calculator text-fcu-neon"></i> Kostenaufstellung
+                    </h4>
+                    <p class="text-gray-600 mb-4">Mehrkosten Sportplatz-/Hallenbelegung</p>
+                    <a href="https://fcunterensingen.de/" target="_blank" class="text-fcu-neon font-semibold hover:underline">
+                        Download PDF <i class="fas fa-download"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Spieler Dokumente -->
+        <div class="mb-12">
+            <h3 class="text-2xl font-bold text-fcu-blue mb-6 pb-2 border-b-2 border-fcu-neon">
+                <i class="fas fa-futbol text-fcu-neon"></i> Spieler & Lizenzierung
+            </h3>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-white border-2 border-fcu-blue p-6 rounded-lg hover:shadow-lg transition">
+                    <h4 class="font-bold text-fcu-blue mb-2">
+                        <i class="fas fa-id-card text-fcu-neon"></i> Antrag Spielerlaubnis
+                    </h4>
+                    <p class="text-gray-600 mb-4">Erteilung erstmaliger Spielerlaubnis</p>
+                    <a href="https://fcunterensingen.de/" target="_blank" class="text-fcu-neon font-semibold hover:underline">
+                        Download PDF <i class="fas fa-download"></i>
+                    </a>
+                </div>
+                <div class="bg-white border-2 border-fcu-blue p-6 rounded-lg hover:shadow-lg transition">
+                    <h4 class="font-bold text-fcu-blue mb-2">
+                        <i class="fas fa-check-circle text-fcu-neon"></i> Einwilligung Spielerdaten
+                    </h4>
+                    <p class="text-gray-600 mb-4">Einwilligung zur Verarbeitung von Spielerdaten</p>
+                    <a href="https://fcunterensingen.de/" target="_blank" class="text-fcu-neon font-semibold hover:underline">
+                        Download PDF <i class="fas fa-download"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Information Section -->
+    <section class="bg-fcu-blue text-white py-16">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-12 text-center">ℹ️ Wichtige Informationen</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center">
+                    <i class="fas fa-pen-fancy text-fcu-neon text-4xl mb-4"></i>
+                    <h3 class="font-bold mb-2">Alle Formulare</h3>
+                    <p>Alle notwendigen Formulare sind zum Download bereit</p>
+                </div>
+                <div class="text-center">
+                    <i class="fas fa-shield-alt text-fcu-neon text-4xl mb-4"></i>
+                    <h3 class="font-bold mb-2">Datenschutz</h3>
+                    <p>Ihre Daten sind bei uns sicher und geschützt</p>
+                </div>
+                <div class="text-center">
+                    <i class="fas fa-question-circle text-fcu-neon text-4xl mb-4"></i>
+                    <h3 class="font-bold mb-2">Fragen?</h3>
+                    <p>Kontaktieren Sie uns jederzeit bei Fragen</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="max-w-7xl mx-auto px-4 py-16">
+        <h2 class="text-3xl font-bold mb-12 text-center">❓ Häufig gestellte Fragen</h2>
+        <div class="max-w-3xl mx-auto space-y-4">
+            <details class="bg-gray-50 p-6 rounded-lg cursor-pointer hover:shadow-lg transition">
+                <summary class="font-bold text-fcu-blue flex items-center">
+                    <i class="fas fa-chevron-right text-fcu-neon mr-3"></i>
+                    Wie trete ich bei?
+                </summary>
+                <p class="text-gray-700 mt-4">
+                    Du kannst jederzeit dem FC Unterensingen beitreten. Lade dir den Mitgliedsantrag herunter, 
+                    fülle ihn aus und bringe ihn zum Training mit oder sende ihn per Post an uns.
+                </p>
+            </details>
+            <details class="bg-gray-50 p-6 rounded-lg cursor-pointer hover:shadow-lg transition">
+                <summary class="font-bold text-fcu-blue flex items-center">
+                    <i class="fas fa-chevron-right text-fcu-neon mr-3"></i>
+                    Wie hoch sind die Mitgliedsbeiträge?
+                </summary>
+                <p class="text-gray-700 mt-4">
+                    Die aktuellen Beitragssätze findest du in der Beitragsordnung. Diese richtet sich nach 
+                    Alter und Abteilung. Für genaue Informationen laden wir dich ein, uns zu kontaktieren.
+                </p>
+            </details>
+            <details class="bg-gray-50 p-6 rounded-lg cursor-pointer hover:shadow-lg transition">
+                <summary class="font-bold text-fcu-blue flex items-center">
+                    <i class="fas fa-chevron-right text-fcu-neon mr-3"></i>
+                    Kann ich die Sportplätze mieten?
+                </summary>
+                <p class="text-gray-700 mt-4">
+                    Ja, die Sportplätze des FC Unterensingen können gemietet werden. 
+                    Informationen zu Preisen und Verfügbarkeit findest du in der Kostenaufstellung.
+                </p>
+            </details>
+            <details class="bg-gray-50 p-6 rounded-lg cursor-pointer hover:shadow-lg transition">
+                <summary class="font-bold text-fcu-blue flex items-center">
+                    <i class="fas fa-chevron-right text-fcu-neon mr-3"></i>
+                    Wie sind meine Daten geschützt?
+                </summary>
+                <p class="text-gray-700 mt-4">
+                    Der FC Unterensingen nimmt Datenschutz sehr ernst. Alle Informationen sind in der 
+                    Datenschutzerklärung aufgeführt. Wir verarbeiten deine Daten nur für vereinsinterne Zwecke.
+                </p>
+            </details>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="max-w-7xl mx-auto px-4 py-16">
+        <h2 class="text-3xl font-bold mb-8 text-center">📞 Noch Fragen?</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="bg-gray-50 p-8 rounded-lg text-center">
+                <i class="fas fa-envelope text-fcu-neon text-3xl mb-4"></i>
+                <h3 class="font-bold mb-2">E-Mail</h3>
+                <a href="mailto:orga@fcunterensingen.de" class="text-fcu-blue hover:underline">
+                    orga@fcunterensingen.de
+                </a>
+            </div>
+            <div class="bg-gray-50 p-8 rounded-lg text-center">
+                <i class="fas fa-phone text-fcu-neon text-3xl mb-4"></i>
+                <h3 class="font-bold mb-2">Telefon</h3>
+                <a href="tel:+491632171720" class="text-fcu-blue hover:underline">
+                    0163-2171720
+                </a>
+            </div>
+            <div class="bg-gray-50 p-8 rounded-lg text-center">
+                <i class="fas fa-home text-fcu-neon text-3xl mb-4"></i>
+                <h3 class="font-bold mb-2">Besuche uns</h3>
+                <p class="text-gray-600">
+                    Stadion Unterensingen<br>
+                    Sportplatzstraße
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-fcu-dark text-white py-12 mt-16">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="font-bold mb-4">FC Unterensingen</h3>
+                    <p class="text-gray-400">Der Sportverein für die ganze Familie</p>
+                </div>
+                <div>
+                    <h3 class="font-bold mb-4">Quicklinks</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="index.html" class="hover:text-fcu-neon transition">Startseite</a></li>
+                        <li><a href="vorstand.html" class="hover:text-fcu-neon transition">Vorstand</a></li>
+                        <li><a href="jobs.html" class="hover:text-fcu-neon transition">Jobs</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold mb-4">Social Media</h3>
+                    <div class="space-y-2">
+                        <a href="https://www.facebook.com/p/FC-Unterensingen-1993-eV-100043269447266/" class="text-gray-400 hover:text-fcu-neon transition">
+                            <i class="fab fa-facebook"></i> Facebook
+                        </a><br>
+                        <a href="https://www.instagram.com/fc_unterensingen/" class="text-gray-400 hover:text-fcu-neon transition">
+                            <i class="fab fa-instagram"></i> Instagram
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="font-bold mb-4">Kontakt</h3>
+                    <p class="text-gray-400 text-sm">
+                        <i class="fas fa-phone"></i> <a href="tel:+491632171720" class="hover:text-fcu-neon">0163-2171720</a><br>
+                        <i class="fas fa-envelope"></i> <a href="mailto:orga@fcunterensingen.de" class="hover:text-fcu-neon">orga@fcunterensingen.de</a>
+                    </p>
+                </div>
+            </div>
+            <hr class="border-gray-700 my-8">
+            <div class="text-center text-gray-400">
+                <p>&copy; 2026 FC Unterensingen. Alle Rechte vorbehalten.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

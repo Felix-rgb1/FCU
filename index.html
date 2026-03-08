@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FC Unterensingen - Ein Dorf. Ein Team.</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'fcu-dark': '#000000',
+                        'fcu-blue': '#1a1a1a',
+                        'fcu-neon': '#ffffff',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-white text-gray-900">
+    
+    <!-- STICKY HEADER -->
+    <header class="sticky top-0 z-50 bg-fcu-dark text-white shadow-lg">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+            <!-- Logo Row -->
+            <div class="flex items-center justify-between mb-4">
+                <div class="flex items-center space-x-2">
+                    <div class="w-12 h-12 bg-fcu-neon rounded-lg flex items-center justify-center font-bold text-fcu-dark text-xl">
+                        FCU
+                    </div>
+                    <div>
+                        <span class="text-xl font-bold block">FC Unterensingen</span>
+                        <span class="text-xs text-fcu-neon italic">FCU - das bist du</span>
+                    </div>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden text-fcu-neon text-2xl">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+
+            <!-- Desktop Navigation -->
+            <div class="hidden md:flex flex-wrap gap-8">
+                <!-- Der Verein -->
+                <div class="group relative inline-block">
+                    <button class="hover:text-fcu-neon transition-colors font-medium flex items-center">
+                        Der Verein <i class="fas fa-chevron-down text-xs ml-1"></i>
+                    </button>
+                    <div class="absolute left-0 top-full pt-2 w-48 bg-fcu-blue rounded shadow-lg py-2 z-50 hidden group-hover:block">
+                        <a href="vorstand.html" class="block px-4 py-2 hover:text-fcu-neon hover:bg-fcu-dark/20">👥 Vorstand</a>
+                        <a href="jobs.html" class="block px-4 py-2 hover:text-fcu-neon hover:bg-fcu-dark/20">💼 Jobs & Ehrenamt</a>
+                        <a href="umbau-vereinshaus.html" class="block px-4 py-2 hover:text-fcu-neon hover:bg-fcu-dark/20">🏗️ Umbau Vereinshaus</a>
+                        <a href="fsj.html" class="block px-4 py-2 hover:text-fcu-neon hover:bg-fcu-dark/20">🌟 FSJ</a>
+                    </div>
+                </div>
+
+                <!-- Jugend -->
+                <div class="group relative inline-block">
+                    <button class="hover:text-fcu-neon transition-colors font-medium flex items-center">
+                        Jugend <i class="fas fa-chevron-down text-xs ml-1"></i>
+                    </button>
+                    <div class="absolute left-0 top-full pt-2 w-56 bg-fcu-blue rounded shadow-lg py-2 z-50 hidden group-hover:block">
+                        <div class="px-4 py-2 text-fcu-neon font-bold text-sm">Junioren</div>
+                        <a href="f-jugend.html" class="block px-4 py-2 pl-8 hover:text-fcu-neon hover:bg-fcu-dark/20">F-Jugend</a>
+                        <a href="e1-jugend.html" class="block px-4 py-2 pl-8 hover:text-fcu-neon hover:bg-fcu-dark/20">E1-Jugend</a>
+                        <a href="e2-jugend.html" class="block px-4 py-2 pl-8 hover:text-fcu-neon hover:bg-fcu-dark/20">E2-Jugend</a>
+                        <a href="d-jugend.html" class="block px-4 py-2 pl-8 hover:text-fcu-neon hover:bg-fcu-dark/20">D-Jugend</a>
+                        <a href="c-jugend.html" class="block px-4 py-2 pl-8 hover:text-fcu-neon hover:bg-fcu-dark/20">C-Jugend</a>
+                        <div class="border-t border-fcu-dark my-2"></div>
+                        <div class="px-4 py-2 text-fcu-neon font-bold text-sm">Juniorinnen</div>
+                        <a href="e-jugend-juniorinnen.html" class="block px-4 py-2 pl-8 hover:text-fcu-neon hover:bg-fcu-dark/20">E-Jugend</a>
+                        <a href="d-jugend-juniorinnen.html" class="block px-4 py-2 pl-8 hover:text-fcu-neon hover:bg-fcu-dark/20">D-Jugend</a>
+                        <a href="c-jugend-juniorinnen.html" class="block px-4 py-2 pl-8 hover:text-fcu-neon hover:bg-fcu-dark/20">C-Jugend</a>
+                    </div>
+                </div>
+
+                <!-- Jedermänner AH -->
+                <a href="#" class="hover:text-fcu-neon transition-colors font-medium">Jedermänner AH</a>
+
+                <!-- Spielbetrieb -->
+                <a href="spielbetrieb.html" class="hover:text-fcu-neon transition-colors font-medium">Spielbetrieb</a>
+
+                <!-- Mitglieder -->
+                <a href="mitglieder.html" class="hover:text-fcu-neon transition-colors font-medium">Mitglieder</a>
+            </div>
+        </nav>
+
+        <!-- Mobile Navigation -->
+        <div id="mobile-menu" class="hidden md:hidden bg-fcu-blue border-t border-fcu-neon">
+            <div class="px-4 py-4 space-y-3 max-h-96 overflow-y-auto">
+                <details class="group">
+                    <summary class="cursor-pointer hover:text-fcu-neon font-medium flex items-center">
+                        Der Verein <i class="fas fa-chevron-right ml-auto"></i>
+                    </summary>
+                    <div class="pl-4 mt-2 space-y-2">
+                        <a href="vorstand.html" class="block hover:text-fcu-neon">👥 Vorstand</a>
+                        <a href="jobs.html" class="block hover:text-fcu-neon">💼 Jobs & Ehrenamt</a>
+                        <a href="umbau-vereinshaus.html" class="block hover:text-fcu-neon">🏗️ Umbau Vereinshaus</a>
+                        <a href="fsj.html" class="block hover:text-fcu-neon">🌟 FSJ</a>
+                    </div>
+                </details>
+                <details class="group">
+                    <summary class="cursor-pointer hover:text-fcu-neon font-medium flex items-center">
+                        Jugend <i class="fas fa-chevron-right ml-auto"></i>
+                    </summary>
+                    <div class="pl-4 mt-2 space-y-2">
+                        <div class="text-fcu-neon font-bold text-sm">Junioren</div>
+                        <a href="f-jugend.html" class="block hover:text-fcu-neon pl-2">F-Jugend</a>
+                        <a href="e1-jugend.html" class="block hover:text-fcu-neon pl-2">E1-Jugend</a>
+                        <a href="e2-jugend.html" class="block hover:text-fcu-neon pl-2">E2-Jugend</a>
+                        <a href="d-jugend.html" class="block hover:text-fcu-neon pl-2">D-Jugend</a>
+                        <a href="c-jugend.html" class="block hover:text-fcu-neon pl-2">C-Jugend</a>
+                        <div class="text-fcu-neon font-bold text-sm mt-3">Juniorinnen</div>
+                        <a href="e-jugend-juniorinnen.html" class="block hover:text-fcu-neon pl-2">E-Jugend</a>
+                        <a href="d-jugend-juniorinnen.html" class="block hover:text-fcu-neon pl-2">D-Jugend</a>
+                        <a href="c-jugend-juniorinnen.html" class="block hover:text-fcu-neon pl-2">C-Jugend</a>
+                    </div>
+                </details>
+                <a href="#" class="block hover:text-fcu-neon">Jedermänner AH</a>
+                <a href="spielbetrieb.html" class="block hover:text-fcu-neon">Spielbetrieb</a>
+                <a href="mitglieder.html" class="block hover:text-fcu-neon">Mitglieder</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- ANSTEHENDE VERANSTALTUNGEN -->
+    <div class="bg-fcu-neon text-fcu-dark py-4">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex items-center justify-center gap-4 flex-wrap">
+                <i class="fas fa-calendar-alt text-lg font-bold"></i>
+                <span class="font-bold">📅 Nächste Hauptversammlung: <strong>27. März 2026 | 18:00 Uhr</strong></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- MATCH TICKER -->
+    <div class="bg-fcu-blue text-white py-4 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 flex items-center justify-between md:justify-center gap-8">
+            <div class="flex-1 md:flex-none text-center">
+                <p class="text-sm font-semibold text-fcu-neon uppercase tracking-wider">Letztes Ergebnis</p>
+                <p class="text-2xl font-bold">FCU <span class="text-fcu-neon">3:1</span> Nachbarverein</p>
+                <p class="text-xs text-gray-300">vor 3 Tagen</p>
+            </div>
+            
+            <div class="hidden md:block border-r-2 border-fcu-neon h-16"></div>
+            
+            <div class="flex-1 md:flex-none text-center">
+                <p class="text-sm font-semibold text-fcu-neon uppercase tracking-wider">Nächstes Spiel</p>
+                <p class="text-2xl font-bold">FCU vs <span class="text-fcu-neon">Gastteam</span></p>
+                <p class="text-xs text-gray-300">Samstag, 15. März | 15:00 Uhr</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- HERO SECTION -->
+    <section class="relative h-screen bg-gradient-to-r from-fcu-dark via-fcu-blue to-fcu-dark flex items-center justify-center overflow-hidden">
+        <!-- Background Image Overlay -->
+        <div class="absolute inset-0 bg-cover bg-center opacity-20" style="background-image: url('https://images.unsplash.com/photo-1461896836934-ffe607ba8211?w=1200&h=800&fit=crop');"></div>
+        
+        <!-- Content -->
+        <div class="relative z-10 text-center px-4 max-w-4xl">
+            <h1 class="text-6xl md:text-7xl font-black text-white mb-6 leading-tight drop-shadow-lg">
+                Ein Dorf.<br><span class="text-fcu-neon">Ein Team.</span>
+            </h1>
+            <p class="text-2xl md:text-3xl text-gray-200 mb-8 font-bold">
+                FCU - Das bist du
+            </p>
+            <p class="text-lg text-gray-300 mb-12 max-w-2xl mx-auto">
+                Der FC Unterensingen: Ein Verein, der für Zusammenhalt, Leidenschaft und Gemeinschaft steht.
+            </p>
+            <a href="#news" class="inline-block bg-fcu-neon text-fcu-dark px-8 py-4 font-bold text-lg hover:bg-yellow-300 transition-all shadow-lg">
+                <i class="fas fa-arrow-down mr-2"></i> Jetzt entdecken
+            </a>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <i class="fas fa-chevron-down text-fcu-neon text-3xl"></i>
+        </div>
+    </section>
+
+    <!-- NEWS SECTION -->
+    <section id="news" class="max-w-7xl mx-auto px-4 py-20">
+        <h2 class="text-4xl font-black text-fcu-dark mb-12 text-center">
+            📰 Aktuelle News
+        </h2>
+        
+        <div class="grid md:grid-cols-3 gap-8 mb-12">
+            <!-- FSJ News -->
+            <div class="bg-white border-2 border-fcu-blue rounded-lg overflow-hidden hover:shadow-xl transition-all transform hover:-translate-y-2">
+                <div class="h-48 bg-gradient-to-br from-fcu-blue to-fcu-dark flex items-center justify-center text-5xl">
+                    🌟
+                </div>
+                <div class="p-6">
+                    <span class="text-fcu-neon font-bold text-sm">FSJ PROGRAMM</span>
+                    <h3 class="text-2xl font-bold text-fcu-dark mt-2 mb-3">
+                        FSJ 2025/2026 startet bald!
+                    </h3>
+                    <p class="text-gray-600 mb-4">
+                        Das Freiwillige Soziale Jahr Sport und Schule bietet dir 400€ Taschengeld, C-Lizenz Ausbildung und unvergessliche Erfahrungen.
+                    </p>
+                    <a href="fsj.html" class="text-fcu-neon font-bold hover:underline">
+                        Mehr erfahren →
+                    </a>
+                </div>
+            </div>
+
+            <!-- Umbau News -->
+            <div class="bg-white border-2 border-fcu-neon rounded-lg overflow-hidden hover:shadow-xl transition-all transform hover:-translate-y-2">
+                <div class="h-48 bg-gradient-to-br from-fcu-neon to-yellow-500 flex items-center justify-center text-5xl">
+                    🏗️
+                </div>
+                <div class="p-6">
+                    <span class="text-fcu-neon font-bold text-sm">UMBAU PROJEKT</span>
+                    <h3 class="text-2xl font-bold text-fcu-dark mt-2 mb-3">
+                        Umbau Vereinshaus im Fokus
+                    </h3>
+                    <p class="text-gray-600 mb-4">
+                        Das Materiallager wird zum neuen Herzstück des Vereins. Unterstütze unser Projekt mit einer Spende!
+                    </p>
+                    <a href="umbau-vereinshaus.html" class="text-fcu-neon font-bold hover:underline">
+                        Mehr erfahren →
+                    </a>
+                </div>
+            </div>
+
+            <!-- Jobs News -->
+            <div class="bg-white border-2 border-fcu-blue rounded-lg overflow-hidden hover:shadow-xl transition-all transform hover:-translate-y-2">
+                <div class="h-48 bg-gradient-to-br from-fcu-blue to-fcu-dark flex items-center justify-center text-5xl">
+                    💼
+                </div>
+                <div class="p-6">
+                    <span class="text-fcu-neon font-bold text-sm">STELLENANGEBOT</span>
+                    <h3 class="text-2xl font-bold text-fcu-dark mt-2 mb-3">
+                        11 Positionen im Verein offen
+                    </h3>
+                    <p class="text-gray-600 mb-4">
+                        Wir suchen engagierte Menschen! Von Ehrenamtsbeauftragtem bis zum Projektmanager - deine Unterstützung zählt.
+                    </p>
+                    <a href="jobs.html" class="text-fcu-neon font-bold hover:underline">
+                        Zur Stellenbörse →
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SPENDENAUFRUF -->
+    <section class="bg-gradient-to-r from-fcu-dark to-fcu-blue text-white py-16">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid md:grid-cols-2 gap-8 items-center">
+                <div>
+                    <h2 class="text-4xl font-black mb-4">
+                        🤝 Unterstütze den Umbau!
+                    </h2>
+                    <p class="text-lg mb-6 text-gray-200">
+                        Das Umbau-Projekt "Vereinshaus modernisieren" ist ein großes Ziel des FC Unterensingen. 
+                        Mit deiner Spende hilfst du, das Vereinshaus zu einem modernen Treffpunkt für alle Generationen zu entwickeln.
+                    </p>
+                    <div class="space-y-3">
+                        <div class="flex items-center gap-2">
+                            <i class="fas fa-check text-fcu-neon text-xl"></i>
+                            <span>Spendenbescheinigung möglich</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <i class="fas fa-check text-fcu-neon text-xl"></i>
+                            <span>Transparente Projektdokumentation</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <i class="fas fa-check text-fcu-neon text-xl"></i>
+                            <span>Deine Unterstützung zählt!</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-fcu-neon text-fcu-dark p-8 rounded-lg text-center">
+                    <h3 class="text-2xl font-black mb-6">Jetzt spenden</h3>
+                    <div class="space-y-4">
+                        <a href="https://www.betterplace.org/de/projects/167087-umbau-vereinshuette-fc-unterensingen" 
+                           target="_blank"
+                           class="inline-block bg-fcu-dark text-white px-8 py-3 rounded font-bold hover:bg-fcu-blue transition-all w-full">
+                            <i class="fas fa-heart mr-2"></i> Auf Betterplace spenden
+                        </a>
+                        <a href="umbau-vereinshaus.html" 
+                           class="inline-block bg-fcu-blue text-white px-8 py-3 rounded font-bold hover:bg-fcu-dark transition-all w-full">
+                            <i class="fas fa-info-circle mr-2"></i> Mehr Infos
+                        </a>
+                    </div>
+                    <p class="text-sm text-gray-600 mt-4">
+                        IBAN: DE79 6129 0120 0596 6680 07
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SCHEDULE SECTION -->
+    <section id="schedule" class="max-w-7xl mx-auto px-4 py-20">
+        <h2 class="text-4xl font-black text-fcu-dark mb-12 text-center">
+            📅 Spielplan
+        </h2>
+        
+        <div class="bg-white border-2 border-fcu-blue rounded-lg p-8">
+            <iframe width="100%" height="600" src="https://www.fussball.de/verein/fc-unterensingen-1993-ev/-/saison/2025/2026" 
+                    frameborder="0" scrolling="yes" class="rounded-lg"></iframe>
+        </div>
+    </section>
+
+    <!-- TEAMS SECTION -->
+    <section id="teams-jugend" class="max-w-7xl mx-auto px-4 py-20">
+        <h2 class="text-4xl font-black text-fcu-dark mb-12 text-center">
+            ⚽ Unsere Mannschaften
+        </h2>
+
+        <!-- Junioren -->
+        <h3 class="text-3xl font-bold text-fcu-blue mb-8">Junioren</h3>
+        <div class="grid md:grid-cols-2 lg:grid-cols-5 gap-4 mb-12">
+            <a href="c-jugend.html" class="bg-white border-2 border-fcu-blue p-6 rounded hover:shadow-lg transition text-center hover:bg-blue-50">
+                <div class="text-3xl mb-2">⚽</div>
+                <h4 class="font-bold text-fcu-blue">C-Jugend</h4>
+                <p class="text-sm text-gray-600">15-17 Jahre</p>
+            </a>
+            <a href="d-jugend.html" class="bg-white border-2 border-fcu-blue p-6 rounded hover:shadow-lg transition text-center hover:bg-blue-50">
+                <div class="text-3xl mb-2">⚽</div>
+                <h4 class="font-bold text-fcu-blue">D-Jugend</h4>
+                <p class="text-sm text-gray-600">13-15 Jahre</p>
+            </a>
+            <a href="e1-jugend.html" class="bg-white border-2 border-fcu-blue p-6 rounded hover:shadow-lg transition text-center hover:bg-blue-50">
+                <div class="text-3xl mb-2">⚽</div>
+                <h4 class="font-bold text-fcu-blue">E1-Jugend</h4>
+                <p class="text-sm text-gray-600">11-13 Jahre</p>
+            </a>
+            <a href="e2-jugend.html" class="bg-white border-2 border-fcu-blue p-6 rounded hover:shadow-lg transition text-center hover:bg-blue-50">
+                <div class="text-3xl mb-2">⚽</div>
+                <h4 class="font-bold text-fcu-blue">E2-Jugend</h4>
+                <p class="text-sm text-gray-600">11-13 Jahre</p>
+            </a>
+            <a href="f-jugend.html" class="bg-white border-2 border-fcu-blue p-6 rounded hover:shadow-lg transition text-center hover:bg-blue-50">
+                <div class="text-3xl mb-2">⚽</div>
+                <h4 class="font-bold text-fcu-blue">F-Jugend</h4>
+                <p class="text-sm text-gray-600">9-11 Jahre</p>
+            </a>
+        </div>
+
+        <!-- Juniorinnen -->
+        <h3 class="text-3xl font-bold text-fcu-blue mb-8">Juniorinnen</h3>
+        <div class="grid md:grid-cols-3 gap-4 mb-12">
+            <a href="c-jugend-juniorinnen.html" class="bg-white border-2 border-pink-400 p-6 rounded hover:shadow-lg transition text-center hover:bg-pink-50">
+                <div class="text-3xl mb-2">⚽</div>
+                <h4 class="font-bold text-pink-600">C-Jugend Juniorinnen</h4>
+                <p class="text-sm text-gray-600">15-17 Jahre</p>
+            </a>
+            <a href="d-jugend-juniorinnen.html" class="bg-white border-2 border-pink-400 p-6 rounded hover:shadow-lg transition text-center hover:bg-pink-50">
+                <div class="text-3xl mb-2">⚽</div>
+                <h4 class="font-bold text-pink-600">D-Jugend Juniorinnen</h4>
+                <p class="text-sm text-gray-600">13-15 Jahre</p>
+            </a>
+            <a href="e-jugend-juniorinnen.html" class="bg-white border-2 border-pink-400 p-6 rounded hover:shadow-lg transition text-center hover:bg-pink-50">
+                <div class="text-3xl mb-2">⚽</div>
+                <h4 class="font-bold text-pink-600">E-Jugend Juniorinnen</h4>
+                <p class="text-sm text-gray-600">11-13 Jahre</p>
+            </a>
+        </div>
+    </section>
+
+    <!-- CLUB SECTION -->
+    <section id="club" class="bg-fcu-dark text-white py-20">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-4xl font-black mb-12 text-center">
+                🏛️ Der FC Unterensingen
+            </h2>
+
+            <!-- Club Info Cards -->
+            <div class="grid md:grid-cols-3 gap-8 mb-12">
+                <div class="bg-fcu-blue p-8 rounded-lg hover:shadow-xl transition">
+                    <div class="text-5xl mb-4">👥</div>
+                    <h3 class="text-2xl font-bold mb-2">Vorstand</h3>
+                    <p class="text-gray-300 mb-4">
+                        Hans Seemann, Sascha Müller, Manuel Moreno und weitere engagierte Vorstandsmitglieder führen unseren Verein.
+                    </p>
+                    <a href="vorstand.html" class="text-fcu-neon hover:underline font-bold">
+                        Vorstand anschauen →
+                    </a>
+                </div>
+
+                <div class="bg-fcu-blue p-8 rounded-lg hover:shadow-xl transition">
+                    <div class="text-5xl mb-4">💼</div>
+                    <h3 class="text-2xl font-bold mb-2">Jobs & FSJ</h3>
+                    <p class="text-gray-300 mb-4">
+                        Wir suchen engagierte Menschen! 11 Positionen sind offen und das FSJ 2025/2026 startet bald.
+                    </p>
+                    <a href="jobs.html" class="text-fcu-neon hover:underline font-bold">
+                        Zur Stellenbörse →
+                    </a>
+                </div>
+
+                <div class="bg-fcu-blue p-8 rounded-lg hover:shadow-xl transition">
+                    <div class="text-5xl mb-4">🏢</div>
+                    <h3 class="text-2xl font-bold mb-2">Sportstätten</h3>
+                    <p class="text-gray-300 mb-4">
+                        Modernes Großfeld, Kleinfeld, Sporthalle und Vereinshaus - top ausgestattet für professionelles Training.
+                    </p>
+                    <a href="sportstaetten.html" class="text-fcu-neon hover:underline font-bold">
+                        Mehr Info →
+                    </a>
+                </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="grid md:grid-cols-4 gap-4 text-center">
+                <a href="mitglieder.html" class="bg-fcu-neon text-fcu-dark p-4 rounded font-bold hover:bg-yellow-300 transition">
+                    📥 Downloads
+                </a>
+                <a href="fan-shop.html" class="bg-fcu-neon text-fcu-dark p-4 rounded font-bold hover:bg-yellow-300 transition">
+                    🛍️ Fan-Shop
+                </a>
+                <a href="spielbetrieb.html" class="bg-fcu-neon text-fcu-dark p-4 rounded font-bold hover:bg-yellow-300 transition">
+                    ⚽ Spielbetrieb
+                </a>
+                <a href="umbau-vereinshaus.html" class="bg-fcu-neon text-fcu-dark p-4 rounded font-bold hover:bg-yellow-300 transition">
+                    🏗️ Umbau
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="max-w-7xl mx-auto px-4 py-20">
+        <h2 class="text-4xl font-black text-fcu-dark mb-12 text-center">
+            📞 Kontakt & Infos
+        </h2>
+
+        <div class="grid md:grid-cols-3 gap-8 mb-12">
+            <!-- Adresse -->
+            <div class="bg-gray-50 p-8 rounded-lg border-2 border-fcu-blue">
+                <h3 class="text-2xl font-bold text-fcu-blue mb-4">
+                    <i class="fas fa-map-marker-alt text-fcu-neon"></i> Adresse
+                </h3>
+                <p class="text-gray-700 mb-2">
+                    <strong>FC Unterensingen e. V.</strong><br>
+                    Stadion Unterensingen<br>
+                    Sportplatzstraße<br>
+                    72070 Unterensingen<br>
+                    Deutschland
+                </p>
+            </div>
+
+            <!-- Email & Telefon -->
+            <div class="bg-gray-50 p-8 rounded-lg border-2 border-fcu-blue">
+                <h3 class="text-2xl font-bold text-fcu-blue mb-4">
+                    <i class="fas fa-envelope text-fcu-neon"></i> Kontakt
+                </h3>
+                <p class="text-gray-700 mb-3">
+                    <strong>Organisation:</strong><br>
+                    <a href="mailto:orga@fcunterensingen.de" class="text-fcu-blue hover:underline">orga@fcunterensingen.de</a>
+                </p>
+                <p class="text-gray-700">
+                    <strong>Telefon:</strong><br>
+                    <a href="tel:+491632171720" class="text-fcu-blue hover:underline">0163-2171720</a> (Hans Seemann)
+                </p>
+            </div>
+
+            <!-- Social Media -->
+            <div class="bg-gray-50 p-8 rounded-lg border-2 border-fcu-blue">
+                <h3 class="text-2xl font-bold text-fcu-blue mb-4">
+                    <i class="fas fa-share-alt text-fcu-neon"></i> Social Media
+                </h3>
+                <div class="space-y-3">
+                    <a href="https://www.facebook.com/p/FC-Unterensingen-1993-eV-100043269447266/" 
+                       target="_blank" class="flex items-center gap-2 text-gray-700 hover:text-fcu-neon transition">
+                        <i class="fab fa-facebook text-2xl text-blue-600"></i>
+                        <span>Facebook</span>
+                    </a>
+                    <a href="https://www.instagram.com/fc_unterensingen/" 
+                       target="_blank" class="flex items-center gap-2 text-gray-700 hover:text-fcu-neon transition">
+                        <i class="fab fa-instagram text-2xl bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent"></i>
+                        <span>Instagram</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mitglieder Downloads -->
+        <div class="bg-fcu-blue text-white p-12 rounded-lg">
+            <h3 class="text-3xl font-bold mb-4 flex items-center gap-2">
+                <i class="fas fa-file-download"></i> Mitglieder-Downloads
+            </h3>
+            <p class="mb-6 text-gray-200">
+                Alle wichtigen Dokumente für Mitglieder findest du auf der Mitgliederseite - Mitgliedsantrag, Beitragsordnung, Vereinssatzung und mehr.
+            </p>
+            <a href="mitglieder.html" class="inline-block bg-fcu-neon text-fcu-dark px-8 py-3 rounded font-bold hover:bg-yellow-300 transition">
+                <i class="fas fa-download mr-2"></i> Zu den Downloads
+            </a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-fcu-dark text-white py-12 border-t-4 border-fcu-neon">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <!-- Footer Col 1 -->
+                <div>
+                    <h4 class="text-lg font-black text-fcu-neon mb-4">FC Unterensingen</h4>
+                    <p class="text-gray-400">
+                        Ein Dorf. Ein Team. Seit 1963.
+                    </p>
+                    <p class="text-fcu-neon italic text-sm mt-2">
+                        FCU - das bist du
+                    </p>
+                </div>
+
+                <!-- Footer Col 2 -->
+                <div>
+                    <h4 class="text-lg font-black mb-4">Verein</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="vorstand.html" class="hover:text-fcu-neon transition-colors">Vorstand</a></li>
+                        <li><a href="jobs.html" class="hover:text-fcu-neon transition-colors">Jobs & FSJ</a></li>
+                        <li><a href="mitglieder.html" class="hover:text-fcu-neon transition-colors">Mitglieder</a></li>
+                        <li><a href="umbau-vereinshaus.html" class="hover:text-fcu-neon transition-colors">Umbau</a></li>
+                    </ul>
+                </div>
+
+                <!-- Footer Col 3 -->
+                <div>
+                    <h4 class="text-lg font-black mb-4">Spielbetrieb</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="spielbetrieb.html" class="hover:text-fcu-neon transition-colors">Spielbetrieb</a></li>
+                        <li><a href="platzbelegung.html" class="hover:text-fcu-neon transition-colors">Platzbelegung</a></li>
+                        <li><a href="sportstaetten.html" class="hover:text-fcu-neon transition-colors">Sportstätten</a></li>
+                        <li><a href="fan-shop.html" class="hover:text-fcu-neon transition-colors">Fan-Shop</a></li>
+                    </ul>
+                </div>
+
+                <!-- Footer Col 4 - Social Media -->
+                <div>
+                    <h4 class="text-lg font-black mb-4">Folge uns</h4>
+                    <div class="flex gap-4 text-2xl">
+                        <a href="https://www.facebook.com/p/FC-Unterensingen-1993-eV-100043269447266/" 
+                           target="_blank" class="text-gray-400 hover:text-fcu-neon transition-colors">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="https://www.instagram.com/fc_unterensingen/" 
+                           target="_blank" class="text-gray-400 hover:text-fcu-neon transition-colors">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="mailto:orga@fcunterensingen.de" 
+                           class="text-gray-400 hover:text-fcu-neon transition-colors">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-700 pt-8 text-center text-gray-400">
+                <p>&copy; 2026 FC Unterensingen e.V. Alle Rechte vorbehalten. | <a href="https://fcunterensingen.de" class="text-fcu-neon hover:underline">www.fcunterensingen.de</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        if (mobileMenuBtn) {
+            mobileMenuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+        }
+
+        // Smooth Scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

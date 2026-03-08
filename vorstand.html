@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vorstand - FC Unterensingen</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'fcu-dark': '#000000',
+                        'fcu-blue': '#1a1a1a',
+                        'fcu-neon': '#ffffff',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-white text-gray-900">
+    
+    <!-- STICKY HEADER -->
+    <header class="sticky top-0 z-50 bg-fcu-dark text-white shadow-lg">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-20">
+            <a href="index.html" class="flex items-center space-x-2">
+                <div class="w-12 h-12 bg-fcu-neon rounded-lg flex items-center justify-center font-bold text-fcu-dark text-xl">
+                    FCU
+                </div>
+                <span class="text-xl font-bold hidden sm:inline">FC Unterensingen</span>
+            </a>
+
+            <div class="hidden md:flex space-x-8">
+                <a href="index.html#news" class="hover:text-fcu-neon transition-colors font-medium">News</a>
+                <a href="index.html#teams-jugend" class="hover:text-fcu-neon transition-colors font-medium">Teams</a>
+                <a href="index.html#schedule" class="hover:text-fcu-neon transition-colors font-medium">Spielplan</a>
+                <a href="index.html#club" class="hover:text-fcu-neon transition-colors font-medium">Verein</a>
+                <a href="index.html#contact" class="hover:text-fcu-neon transition-colors font-medium">Kontakt</a>
+            </div>
+
+            <button id="mobile-menu-btn" class="md:hidden text-fcu-neon text-2xl">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-fcu-blue border-t border-fcu-neon">
+            <div class="px-4 py-4 space-y-3">
+                <a href="index.html#news" class="block hover:text-fcu-neon transition-colors">News</a>
+                <a href="index.html#teams-jugend" class="block hover:text-fcu-neon transition-colors">Teams</a>
+                <a href="index.html#schedule" class="block hover:text-fcu-neon transition-colors">Spielplan</a>
+                <a href="index.html#club" class="block hover:text-fcu-neon transition-colors">Verein</a>
+                <a href="index.html#contact" class="block hover:text-fcu-neon transition-colors">Kontakt</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="relative h-96 bg-gradient-to-r from-fcu-dark via-fcu-blue to-fcu-dark flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 bg-cover bg-center opacity-20" style="background-image: url('https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&h=800&fit=crop');"></div>
+        
+        <div class="relative z-10 text-center px-4">
+            <h1 class="text-5xl md:text-6xl font-black text-white mb-4">
+                👥 <span class="text-fcu-neon">Vorstand</span>
+            </h1>
+            <p class="text-xl text-gray-200">Das Herz des Vereins</p>
+        </div>
+    </section>
+
+    <!-- CONTENT -->
+    <section class="py-20 px-4 bg-gray-50">
+        <div class="max-w-7xl mx-auto">
+            <!-- Aktuelle Vorstandsmitglieder -->
+            <div class="mb-16">
+                <h2 class="text-3xl font-black text-fcu-dark mb-8">Unser Vorstand</h2>
+                <p class="text-gray-600 mb-8">Gewählt bei der Mitgliederversammlung am 22.03.2025</p>
+                
+                <div class="grid md:grid-cols-2 gap-8">
+                    <!-- Vorsitzender -->
+                    <div class="bg-white p-8 rounded-lg shadow-lg border-l-4 border-fcu-neon hover:shadow-xl transition-shadow">
+                        <div class="flex items-start gap-4">
+                            <div class="w-16 h-16 bg-fcu-neon rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-star text-fcu-dark text-2xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-black text-fcu-dark">Hans Seemann</h3>
+                                <p class="text-fcu-neon font-bold mb-3">1. Vorsitzender</p>
+                                <p class="text-gray-700">Leitet den Verein und vertritt ihn nach außen. Erste Anlaufstelle für alle Vereinsangelegenheiten.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2. Vorsitzender -->
+                    <div class="bg-white p-8 rounded-lg shadow-lg border-l-4 border-fcu-neon hover:shadow-xl transition-shadow">
+                        <div class="flex items-start gap-4">
+                            <div class="w-16 h-16 bg-fcu-neon rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-gem text-fcu-dark text-2xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-black text-fcu-dark">Sascha Müller</h3>
+                                <p class="text-fcu-neon font-bold mb-3">2. Vorsitzender</p>
+                                <p class="text-gray-700">Unterstützt den 1. Vorsitzenden und springt ein, wenn dieser verhindert ist. Mitverantwortung für alle Vereinsaufgaben.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Kassenwart -->
+                    <div class="bg-white p-8 rounded-lg shadow-lg border-l-4 border-fcu-neon hover:shadow-xl transition-shadow">
+                        <div class="flex items-start gap-4">
+                            <div class="w-16 h-16 bg-fcu-neon rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-wallet text-fcu-dark text-2xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-black text-fcu-dark">Manuel Moreno</h3>
+                                <p class="text-fcu-neon font-bold mb-3">Kassenwart</p>
+                                <p class="text-gray-700">Verwaltet die Finanzen des Vereins und sorgt für Transparenz in den Gelderflüssen.</p>
+                                <p class="text-sm text-fcu-neon font-bold mt-2">📧 finanzen@fcunterensingen.de</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Jugendleiter Junioren -->
+                    <div class="bg-white p-8 rounded-lg shadow-lg border-l-4 border-fcu-neon hover:shadow-xl transition-shadow">
+                        <div class="flex items-start gap-4">
+                            <div class="w-16 h-16 bg-fcu-neon rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-users text-fcu-dark text-2xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-black text-fcu-dark">Giovanni Tucci</h3>
+                                <p class="text-fcu-neon font-bold mb-3">Jugendleiter Junioren</p>
+                                <p class="text-gray-700">Koordiniert alle Jugendmannschaften der Jungen (C/D/E1/E2/F-Jugend). Dein Ansprechpartner für Jugendbelange.</p>
+                                <p class="text-sm text-fcu-neon font-bold mt-2">📧 jugendleitungm@fcunterensingen.de</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Jugendleiter Juniorinnen -->
+                    <div class="bg-white p-8 rounded-lg shadow-lg border-l-4 border-fcu-neon hover:shadow-xl transition-shadow">
+                        <div class="flex items-start gap-4">
+                            <div class="w-16 h-16 bg-fcu-neon rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-crown text-fcu-dark text-2xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-black text-fcu-dark">Christian Metz</h3>
+                                <p class="text-fcu-neon font-bold mb-3">Jugendleiter Juniorinnen</p>
+                                <p class="text-gray-700">Leitet alle Frauenfußball-Jugendmannschaften (C/D/E-Jugend Juniorinnen). Ansprechpartner für Mädchen-Fußball.</p>
+                                <p class="text-sm text-fcu-neon font-bold mt-2">📧 jugendleitungw@fcunterensingen.de</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Allgemeine Kontakte -->
+            <div class="bg-white p-12 rounded-lg shadow-lg mb-16">
+                <h2 class="text-3xl font-black text-fcu-dark mb-8">📧 Kontakte nach Bereichen</h2>
+                
+                <div class="overflow-x-auto">
+                    <table class="w-full">
+                        <tbody>
+                            <tr class="border-b-2 border-gray-200">
+                                <td class="py-4 px-6 font-bold text-fcu-dark">Vorstand (Allgemein)</td>
+                                <td class="py-4 px-6"><a href="mailto:orga@fcunterensingen.de" class="text-fcu-neon hover:underline font-bold">orga@fcunterensingen.de</a></td>
+                            </tr>
+                            <tr class="border-b-2 border-gray-200 bg-gray-50">
+                                <td class="py-4 px-6 font-bold text-fcu-dark">Finanzen</td>
+                                <td class="py-4 px-6"><a href="mailto:finanzen@fcunterensingen.de" class="text-fcu-neon hover:underline font-bold">finanzen@fcunterensingen.de</a></td>
+                            </tr>
+                            <tr class="border-b-2 border-gray-200">
+                                <td class="py-4 px-6 font-bold text-fcu-dark">Jugendleitung Junioren</td>
+                                <td class="py-4 px-6"><a href="mailto:jugendleitungm@fcunterensingen.de" class="text-fcu-neon hover:underline font-bold">jugendleitungm@fcunterensingen.de</a></td>
+                            </tr>
+                            <tr class="border-b-2 border-gray-200 bg-gray-50">
+                                <td class="py-4 px-6 font-bold text-fcu-dark">Jugendleitung Juniorinnen</td>
+                                <td class="py-4 px-6"><a href="mailto:jugendleitungw@fcunterensingen.de" class="text-fcu-neon hover:underline font-bold">jugendleitungw@fcunterensingen.de</a></td>
+                            </tr>
+                            <tr class="border-b-2 border-gray-200">
+                                <td class="py-4 px-6 font-bold text-fcu-dark">Bambinis</td>
+                                <td class="py-4 px-6"><a href="mailto:bambinis@fcunterensingen.de" class="text-fcu-neon hover:underline font-bold">bambinis@fcunterensingen.de</a></td>
+                            </tr>
+                            <tr class="border-b-2 border-gray-200 bg-gray-50">
+                                <td class="py-4 px-6 font-bold text-fcu-dark">F-Jugend</td>
+                                <td class="py-4 px-6"><a href="mailto:fjugend@fcunterensingen.de" class="text-fcu-neon hover:underline font-bold">fjugend@fcunterensingen.de</a></td>
+                            </tr>
+                            <tr class="border-b-2 border-gray-200">
+                                <td class="py-4 px-6 font-bold text-fcu-dark">E-Jugend (E1 & E2)</td>
+                                <td class="py-4 px-6"><a href="mailto:ejugend@fcunterensingen.de" class="text-fcu-neon hover:underline font-bold">ejugend@fcunterensingen.de</a></td>
+                            </tr>
+                            <tr class="border-b-2 border-gray-200 bg-gray-50">
+                                <td class="py-4 px-6 font-bold text-fcu-dark">E-Jugend Juniorinnen</td>
+                                <td class="py-4 px-6"><a href="mailto:ejuniorinnen@fcunterensingen.de" class="text-fcu-neon hover:underline font-bold">ejuniorinnen@fcunterensingen.de</a></td>
+                            </tr>
+                            <tr class="border-b-2 border-gray-200">
+                                <td class="py-4 px-6 font-bold text-fcu-dark">D-Jugend (Jungen)</td>
+                                <td class="py-4 px-6"><a href="mailto:djugend@fcunterensingen.de" class="text-fcu-neon hover:underline font-bold">djugend@fcunterensingen.de</a></td>
+                            </tr>
+                            <tr class="border-b-2 border-gray-200 bg-gray-50">
+                                <td class="py-4 px-6 font-bold text-fcu-dark">D-Jugend Juniorinnen</td>
+                                <td class="py-4 px-6"><a href="mailto:djuniorinnen@fcunterensingen.de" class="text-fcu-neon hover:underline font-bold">djuniorinnen@fcunterensingen.de</a></td>
+                            </tr>
+                            <tr class="border-b-2 border-gray-200">
+                                <td class="py-4 px-6 font-bold text-fcu-dark">C-Jugend (Jungen)</td>
+                                <td class="py-4 px-6"><a href="mailto:cjugend@fcunterensingen.de" class="text-fcu-neon hover:underline font-bold">cjugend@fcunterensingen.de</a></td>
+                            </tr>
+                            <tr class="bg-gray-50">
+                                <td class="py-4 px-6 font-bold text-fcu-dark">C-Jugend Juniorinnen</td>
+                                <td class="py-4 px-6"><a href="mailto:cjuniorinnen@fcunterensingen.de" class="text-fcu-neon hover:underline font-bold">cjuniorinnen@fcunterensingen.de</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Next Event -->
+            <div class="bg-gradient-to-r from-fcu-dark to-fcu-blue text-white p-8 rounded-lg shadow-lg">
+                <h2 class="text-3xl font-black mb-4 flex items-center">
+                    <i class="fas fa-calendar-alt mr-3 text-fcu-neon"></i> Nächste Veranstaltung
+                </h2>
+                <div class="text-2xl font-bold mb-2">FCU Hauptversammlung</div>
+                <div class="text-fcu-neon text-lg font-bold">📅 Samstag, 27. März 2026 | 18:00 Uhr</div>
+                <p class="text-gray-200 mt-4">Alle Mitglieder sind herzlich eingeladen! Kontaktiere den Vorstand für Ort und weitere Details.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-fcu-dark text-white py-12 border-t-4 border-fcu-neon mt-20">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h4 class="text-lg font-black text-fcu-neon mb-4">FC Unterensingen</h4>
+                    <p class="text-gray-400">Ein Dorf. Ein Team. Seit 1963.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-black mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="index.html" class="hover:text-fcu-neon transition-colors">Home</a></li>
+                        <li><a href="index.html#teams-jugend" class="hover:text-fcu-neon transition-colors">Jugend</a></li>
+                        <li><a href="index.html#schedule" class="hover:text-fcu-neon transition-colors">Spielplan</a></li>
+                        <li><a href="index.html#contact" class="hover:text-fcu-neon transition-colors">Kontakt</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-black mb-4">Rechtliches</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-fcu-neon transition-colors">Impressum</a></li>
+                        <li><a href="#" class="hover:text-fcu-neon transition-colors">Datenschutz</a></li>
+                        <li><a href="#" class="hover:text-fcu-neon transition-colors">AGB</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-black mb-4">Folge uns</h4>
+                    <div class="flex gap-4 text-2xl">
+                        <a href="https://www.facebook.com/p/FC-Unterensingen-1993-eV-100043269447266/" target="_blank" class="text-gray-400 hover:text-fcu-neon transition-colors">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="https://www.instagram.com/fc_unterensingen/" target="_blank" class="text-gray-400 hover:text-fcu-neon transition-colors">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="mailto:orga@fcunterensingen.de" class="text-gray-400 hover:text-fcu-neon transition-colors">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 pt-8 text-center text-gray-400">
+                <p>&copy; 2026 FC Unterensingen e.V. Alle Rechte vorbehalten.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

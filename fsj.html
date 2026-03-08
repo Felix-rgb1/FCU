@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FSJ - Freiwilliges Soziales Jahr - FC Unterensingen</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'fcu-dark': '#000000',
+                        'fcu-blue': '#1a1a1a',
+                        'fcu-neon': '#ffffff',
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-white text-fcu-dark">
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-white shadow-md">
+        <nav class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-fcu-blue">FC Unterensingen</a>
+            <div class="hidden md:flex space-x-6">
+                <a href="index.html" class="hover:text-fcu-blue transition">Startseite</a>
+                <a href="vorstand.html" class="hover:text-fcu-blue transition">Vorstand</a>
+                <a href="jobs.html" class="hover:text-fcu-blue transition">Jobs</a>
+                <a href="fsj.html" class="text-fcu-neon font-semibold">FSJ</a>
+                <a href="#contact" class="hover:text-fcu-blue transition">Kontakt</a>
+            </div>
+            <button class="md:hidden text-2xl" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden bg-fcu-blue text-white">
+            <a href="index.html" class="block px-4 py-2 hover:bg-fcu-neon hover:text-fcu-dark">Startseite</a>
+            <a href="vorstand.html" class="block px-4 py-2 hover:bg-fcu-neon hover:text-fcu-dark">Vorstand</a>
+            <a href="jobs.html" class="block px-4 py-2 hover:bg-fcu-neon hover:text-fcu-dark">Jobs</a>
+            <a href="fsj.html" class="block px-4 py-2 hover:bg-fcu-neon hover:text-fcu-dark">FSJ</a>
+            <a href="#contact" class="block px-4 py-2 hover:bg-fcu-neon hover:text-fcu-dark">Kontakt</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-fcu-blue to-fcu-dark text-white py-20">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h1 class="text-5xl font-bold mb-4">🌟 Freiwilliges Soziales Jahr (FSJ)</h1>
+            <p class="text-xl text-gray-300">Starte dein FSJ – mit Sport, Schule und Teamgeist!</p>
+        </div>
+    </section>
+
+    <!-- Intro Section -->
+    <section class="max-w-7xl mx-auto px-4 py-16">
+        <div class="bg-blue-50 p-8 rounded-lg border-l-4 border-fcu-neon">
+            <h2 class="text-3xl font-bold mb-4">Was ist das FSJ Sport und Schule?</h2>
+            <p class="text-lg text-gray-700 mb-4">
+                Du hast Lust, dich nach der Schule sinnvoll zu engagieren, bist sportlich interessiert und arbeitest gerne 
+                mit Kindern und Jugendlichen? Dann ist das FSJ Sport und Schule genau das Richtige für dich!
+            </p>
+            <p class="text-gray-700">
+                Ab dem Schuljahr 2025/2026 bieten wir dir in Kooperation mit dem FC Unterensingen und einer örtlichen Grundschule 
+                eine spannende Kombination aus Bewegung, Bildung und Vereinsleben.
+            </p>
+        </div>
+    </section>
+
+    <!-- What Awaits You -->
+    <section class="max-w-7xl mx-auto px-4 py-16">
+        <h2 class="text-3xl font-bold mb-12 text-center">📋 Das erwartet dich</h2>
+        <div class="grid md:grid-cols-2 gap-8">
+            <!-- School -->
+            <div class="bg-white border-2 border-fcu-blue p-8 rounded-lg hover:shadow-lg transition">
+                <h3 class="text-2xl font-bold text-fcu-blue mb-4">
+                    <i class="fas fa-school text-fcu-neon"></i> Einsatz in der Schule (ca. 70%)
+                </h3>
+                <ul class="space-y-3 text-gray-700">
+                    <li><i class="fas fa-check text-fcu-neon"></i> Du unterstützt im Bereich Bewegung, Spiel und Sport</li>
+                    <li><i class="fas fa-check text-fcu-neon"></i> Du hilfst bei Projekttagen, Sportaktionen oder Pausenspielen</li>
+                    <li><i class="fas fa-check text-fcu-neon"></i> Du wirst Teil des pädagogischen Teams</li>
+                    <li><i class="fas fa-check text-fcu-neon"></i> Du bringst frischen Wind in den Schulalltag!</li>
+                </ul>
+            </div>
+
+            <!-- Club -->
+            <div class="bg-white border-2 border-fcu-blue p-8 rounded-lg hover:shadow-lg transition">
+                <h3 class="text-2xl font-bold text-fcu-blue mb-4">
+                    <i class="fas fa-futbol text-fcu-neon"></i> Einsatz beim FC Unterensingen (ca. 30%)
+                </h3>
+                <ul class="space-y-3 text-gray-700">
+                    <li><i class="fas fa-check text-fcu-neon"></i> Du unterstützt das Jugendtraining</li>
+                    <li><i class="fas fa-check text-fcu-neon"></i> Du erhältst Einblicke in die Vereinsarbeit</li>
+                    <li><i class="fas fa-check text-fcu-neon"></i> Du wirkst bei Turnieren und Events mit</li>
+                    <li><i class="fas fa-check text-fcu-neon"></i> Du sammelst wertvolle Berufserfahrung</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits -->
+    <section class="bg-fcu-blue text-white py-16">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-12 text-center">✨ Das bekommst du</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="flex items-start space-x-4">
+                    <i class="fas fa-euro-sign text-fcu-neon text-2xl mt-1"></i>
+                    <div>
+                        <h3 class="font-bold mb-2">400€ Taschengeld pro Monat</h3>
+                        <p class="text-gray-200">Finanzielle Unterstützung während deines FSJ-Jahres</p>
+                    </div>
+                </div>
+                <div class="flex items-start space-x-4">
+                    <i class="fas fa-book text-fcu-neon text-2xl mt-1"></i>
+                    <div>
+                        <h3 class="font-bold mb-2">Übungsleiter-C-Ausbildung</h3>
+                        <p class="text-gray-200">Wertvoll für spätere Jobs und Studiengänge</p>
+                    </div>
+                </div>
+                <div class="flex items-start space-x-4">
+                    <i class="fas fa-handshake text-fcu-neon text-2xl mt-1"></i>
+                    <div>
+                        <h3 class="font-bold mb-2">Persönliche Betreuung</h3>
+                        <p class="text-gray-200">Von der Baden-Württembergischen Sportjugend und vor Ort</p>
+                    </div>
+                </div>
+                <div class="flex items-start space-x-4">
+                    <i class="fas fa-star text-fcu-neon text-2xl mt-1"></i>
+                    <div>
+                        <h3 class="font-bold mb-2">Einzigartige Erfahrungen</h3>
+                        <p class="text-gray-200">Teamgeist, Wertschätzung und viel Bewegung</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Requirements -->
+    <section class="max-w-7xl mx-auto px-4 py-16">
+        <h2 class="text-3xl font-bold mb-12 text-center">🎯 Das bringst du mit</h2>
+        <div class="bg-gray-50 p-8 rounded-lg border-l-4 border-fcu-neon">
+            <ul class="space-y-4 text-gray-700">
+                <li class="flex items-start space-x-3">
+                    <i class="fas fa-check text-fcu-blue mt-1"></i>
+                    <span><strong>Du bist bereits 18 Jahre alt</strong> oder wirst in diesem Jahr noch 18</span>
+                </li>
+                <li class="flex items-start space-x-3">
+                    <i class="fas fa-check text-fcu-blue mt-1"></i>
+                    <span><strong>Du bist sportbegeistert</strong> und motiviert</span>
+                </li>
+                <li class="flex items-start space-x-3">
+                    <i class="fas fa-check text-fcu-blue mt-1"></i>
+                    <span><strong>Du hast Freude an der Arbeit</strong> mit Kindern und Jugendlichen</span>
+                </li>
+                <li class="flex items-start space-x-3">
+                    <i class="fas fa-check text-fcu-blue mt-1"></i>
+                    <span><strong>Du möchtest dich weiterentwickeln</strong> und neue Seiten an dir entdecken</span>
+                </li>
+                <li class="flex items-start space-x-3">
+                    <i class="fas fa-check text-fcu-blue mt-1"></i>
+                    <span><strong>Du möchtest erste Berufserfahrung sammeln</strong> in einem motivierten Team</span>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- About FCU -->
+    <section class="bg-fcu-dark text-white py-16">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-8 text-center">Über den FC Unterensingen</h2>
+            <div class="max-w-3xl mx-auto">
+                <p class="text-lg text-gray-300 mb-6">
+                    Der FCU ist mehr als nur ein Sportverein – wir stehen für Zusammenhalt, Engagement und Begeisterung 
+                    für den Sport. Mit einem starken Fokus auf die Jugendarbeit und einem lebendigen Vereinsleben 
+                    wirst du hier Teil eines motivierten Teams, das etwas bewegt – auf dem Platz und darüber hinaus.
+                </p>
+                <div class="text-center">
+                    <a href="index.html" class="text-fcu-neon hover:underline font-semibold">
+                        Mehr über den FC Unterensingen →
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="bg-fcu-neon text-fcu-dark py-16">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-4">⏰ Bewerbungsschluss naht!</h2>
+            <p class="text-xl mb-8">Sicher dir frühzeitig deinen Platz für 2025/2026!</p>
+            <div class="space-y-4">
+                <p class="text-lg font-semibold">Weitere Informationen:</p>
+                <div class="flex flex-col md:flex-row justify-center gap-4">
+                    <a href="https://www.lsvbw.de/sportwelten/sportjugend/fsj-sport-und-schule/" 
+                       target="_blank" 
+                       class="bg-fcu-blue text-white px-8 py-3 rounded-lg hover:shadow-lg transition font-semibold">
+                        <i class="fas fa-external-link-alt"></i> LSVBW FSJ Infos
+                    </a>
+                    <a href="mailto:orga@fcunterensingen.de" 
+                       class="bg-fcu-blue text-white px-8 py-3 rounded-lg hover:shadow-lg transition font-semibold">
+                        <i class="fas fa-envelope"></i> Uns kontaktieren
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="max-w-7xl mx-auto px-4 py-16">
+        <h2 class="text-3xl font-bold mb-8 text-center">📞 Fragen?</h2>
+        <p class="text-center text-gray-600 mb-8">
+            Melde dich direkt beim FC Unterensingen oder bei deiner Grundschule vor Ort!
+        </p>
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="bg-gray-50 p-8 rounded-lg text-center">
+                <i class="fas fa-envelope text-fcu-neon text-3xl mb-4"></i>
+                <h3 class="font-bold mb-2">E-Mail</h3>
+                <a href="mailto:orga@fcunterensingen.de" class="text-fcu-blue hover:underline">
+                    orga@fcunterensingen.de
+                </a>
+            </div>
+            <div class="bg-gray-50 p-8 rounded-lg text-center">
+                <i class="fas fa-phone text-fcu-neon text-3xl mb-4"></i>
+                <h3 class="font-bold mb-2">Telefon</h3>
+                <a href="tel:+491632171720" class="text-fcu-blue hover:underline">
+                    0163-2171720
+                </a>
+            </div>
+            <div class="bg-gray-50 p-8 rounded-lg text-center">
+                <i class="fas fa-globe text-fcu-neon text-3xl mb-4"></i>
+                <h3 class="font-bold mb-2">Web</h3>
+                <a href="https://www.lsvbw.de/sportwelten/sportjugend/fsj-sport-und-schule/" 
+                   target="_blank"
+                   class="text-fcu-blue hover:underline">
+                    LSVBW FSJ Info
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-fcu-dark text-white py-12 mt-16">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="font-bold mb-4">FC Unterensingen</h3>
+                    <p class="text-gray-400">Der Sportverein für die ganze Familie</p>
+                </div>
+                <div>
+                    <h3 class="font-bold mb-4">Quicklinks</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="index.html" class="hover:text-fcu-neon transition">Startseite</a></li>
+                        <li><a href="vorstand.html" class="hover:text-fcu-neon transition">Vorstand</a></li>
+                        <li><a href="jobs.html" class="hover:text-fcu-neon transition">Jobs</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold mb-4">Social Media</h3>
+                    <div class="space-y-2">
+                        <a href="https://www.facebook.com/p/FC-Unterensingen-1993-eV-100043269447266/" class="text-gray-400 hover:text-fcu-neon transition">
+                            <i class="fab fa-facebook"></i> Facebook
+                        </a><br>
+                        <a href="https://www.instagram.com/fc_unterensingen/" class="text-gray-400 hover:text-fcu-neon transition">
+                            <i class="fab fa-instagram"></i> Instagram
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="font-bold mb-4">Kontakt</h3>
+                    <p class="text-gray-400 text-sm">
+                        <i class="fas fa-phone"></i> <a href="tel:+491632171720" class="hover:text-fcu-neon">0163-2171720</a><br>
+                        <i class="fas fa-envelope"></i> <a href="mailto:orga@fcunterensingen.de" class="hover:text-fcu-neon">orga@fcunterensingen.de</a>
+                    </p>
+                </div>
+            </div>
+            <hr class="border-gray-700 my-8">
+            <div class="text-center text-gray-400">
+                <p>&copy; 2026 FC Unterensingen. Alle Rechte vorbehalten.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

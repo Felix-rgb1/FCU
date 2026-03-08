@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jobs & Ehrenamt - FC Unterensingen</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'fcu-dark': '#000000',
+                        'fcu-blue': '#1a1a1a',
+                        'fcu-neon': '#ffffff',
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-white text-fcu-dark">
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-white shadow-md">
+        <nav class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-fcu-blue">FC Unterensingen</a>
+            <div class="hidden md:flex space-x-6">
+                <a href="index.html" class="hover:text-fcu-blue transition">Startseite</a>
+                <a href="vorstand.html" class="hover:text-fcu-blue transition">Vorstand</a>
+                <a href="jobs.html" class="text-fcu-neon font-semibold">Jobs</a>
+                <a href="fsj.html" class="hover:text-fcu-blue transition">FSJ</a>
+                <a href="#contact" class="hover:text-fcu-blue transition">Kontakt</a>
+            </div>
+            <button class="md:hidden text-2xl" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden bg-fcu-blue text-white">
+            <a href="index.html" class="block px-4 py-2 hover:bg-fcu-neon hover:text-fcu-dark">Startseite</a>
+            <a href="vorstand.html" class="block px-4 py-2 hover:bg-fcu-neon hover:text-fcu-dark">Vorstand</a>
+            <a href="jobs.html" class="block px-4 py-2 hover:bg-fcu-neon hover:text-fcu-dark">Jobs</a>
+            <a href="fsj.html" class="block px-4 py-2 hover:bg-fcu-neon hover:text-fcu-dark">FSJ</a>
+            <a href="#contact" class="block px-4 py-2 hover:bg-fcu-neon hover:text-fcu-dark">Kontakt</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-fcu-blue to-fcu-dark text-white py-20">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h1 class="text-5xl font-bold mb-4">💼 Jobs & Ehrenamt</h1>
+            <p class="text-xl text-gray-300">Werde Teil unseres Teams und gestalte FC Unterensingen mit</p>
+        </div>
+    </section>
+
+    <!-- Intro Section -->
+    <section class="max-w-7xl mx-auto px-4 py-16">
+        <div class="bg-blue-50 p-8 rounded-lg border-l-4 border-fcu-neon">
+            <h2 class="text-3xl font-bold mb-4">Mach mit beim FC Unterensingen!</h2>
+            <p class="text-lg text-gray-700 mb-4">
+                Unser Verein lebt von engagierten Menschen wie dir! Wir suchen ständig nach Unterstützung in verschiedensten Bereichen. 
+                Du kannst bei Trainings, Events oder in der Vereinsorganisation unterstützen.
+            </p>
+            <p class="text-gray-700">
+                <strong>Gerne kannst du auch direkt anrufen:</strong><br>
+                <i class="fas fa-phone text-fcu-neon"></i> Hans Seemann: <a href="tel:+491632171720" class="text-fcu-blue hover:underline font-semibold">0163-2171720</a>
+            </p>
+        </div>
+    </section>
+
+    <!-- Open Positions -->
+    <section class="max-w-7xl mx-auto px-4 py-16">
+        <h2 class="text-3xl font-bold mb-12 text-center">🎯 Ausgeschriebene Positionen</h2>
+        <div class="grid md:grid-cols-2 gap-6">
+            <!-- Position Cards -->
+            <div class="bg-white border-2 border-fcu-blue p-6 rounded-lg hover:shadow-lg transition">
+                <h3 class="text-xl font-bold text-fcu-blue mb-2">Ehrenamtsbeauftragter/-in</h3>
+                <p class="text-gray-600 mb-4">Koordination und Unterstützung des Ehrenamts im Verein</p>
+                <a href="#contact" class="text-fcu-neon font-semibold hover:underline">Jetzt bewerben →</a>
+            </div>
+
+            <div class="bg-white border-2 border-fcu-blue p-6 rounded-lg hover:shadow-lg transition">
+                <h3 class="text-xl font-bold text-fcu-blue mb-2">Schiedsrichterbeauftragter/-in</h3>
+                <p class="text-gray-600 mb-4">Verwaltung und Koordination der Schiedsrichter</p>
+                <a href="#contact" class="text-fcu-neon font-semibold hover:underline">Jetzt bewerben →</a>
+            </div>
+
+            <div class="bg-white border-2 border-fcu-blue p-6 rounded-lg hover:shadow-lg transition">
+                <h3 class="text-xl font-bold text-fcu-blue mb-2">Beisitzer Spielbetrieb Jugend</h3>
+                <p class="text-gray-600 mb-4">Unterstützung der Jugendspielleitung</p>
+                <a href="#contact" class="text-fcu-neon font-semibold hover:underline">Jetzt bewerben →</a>
+            </div>
+
+            <div class="bg-white border-2 border-fcu-blue p-6 rounded-lg hover:shadow-lg transition">
+                <h3 class="text-xl font-bold text-fcu-blue mb-2">Projektmanager/-in</h3>
+                <p class="text-gray-600 mb-4">Planung und Durchführung von Vereinsprojekten</p>
+                <a href="#contact" class="text-fcu-neon font-semibold hover:underline">Jetzt bewerben →</a>
+            </div>
+
+            <div class="bg-white border-2 border-fcu-blue p-6 rounded-lg hover:shadow-lg transition">
+                <h3 class="text-xl font-bold text-fcu-blue mb-2">Referent externe Kommunikation</h3>
+                <p class="text-gray-600 mb-4">Öffentlichkeitsarbeit und Außendarstellung</p>
+                <a href="#contact" class="text-fcu-neon font-semibold hover:underline">Jetzt bewerben →</a>
+            </div>
+
+            <div class="bg-white border-2 border-fcu-blue p-6 rounded-lg hover:shadow-lg transition">
+                <h3 class="text-xl font-bold text-fcu-blue mb-2">Referent Bildung & Qualifizierung</h3>
+                <p class="text-gray-600 mb-4">Ausbildung und Weiterentwicklung von Trainern</p>
+                <a href="#contact" class="text-fcu-neon font-semibold hover:underline">Jetzt bewerben →</a>
+            </div>
+
+            <div class="bg-white border-2 border-fcu-blue p-6 rounded-lg hover:shadow-lg transition">
+                <h3 class="text-xl font-bold text-fcu-blue mb-2">Beisitzer Spielbetrieb Erwachsene</h3>
+                <p class="text-gray-600 mb-4">Betreuung der Erwachsenen-Spielleitung</p>
+                <a href="#contact" class="text-fcu-neon font-semibold hover:underline">Jetzt bewerben →</a>
+            </div>
+
+            <div class="bg-white border-2 border-fcu-blue p-6 rounded-lg hover:shadow-lg transition">
+                <h3 class="text-xl font-bold text-fcu-blue mb-2">Referent Marketing</h3>
+                <p class="text-gray-600 mb-4">Marketing und Sponsoring-Management</p>
+                <a href="#contact" class="text-fcu-neon font-semibold hover:underline">Jetzt bewerben →</a>
+            </div>
+
+            <div class="bg-white border-2 border-fcu-blue p-6 rounded-lg hover:shadow-lg transition">
+                <h3 class="text-xl font-bold text-fcu-blue mb-2">Koordinator C-D Jugend</h3>
+                <p class="text-gray-600 mb-4">Koordination der Jugend-Altersgruppen C & D</p>
+                <a href="#contact" class="text-fcu-neon font-semibold hover:underline">Jetzt bewerben →</a>
+            </div>
+
+            <div class="bg-white border-2 border-fcu-blue p-6 rounded-lg hover:shadow-lg transition">
+                <h3 class="text-xl font-bold text-fcu-blue mb-2">Koordinator E-F Jugend</h3>
+                <p class="text-gray-600 mb-4">Koordination der Jugend-Altersgruppen E & F</p>
+                <a href="#contact" class="text-fcu-neon font-semibold hover:underline">Jetzt bewerben →</a>
+            </div>
+
+            <div class="bg-white border-2 border-fcu-blue p-6 rounded-lg hover:shadow-lg transition">
+                <h3 class="text-xl font-bold text-fcu-blue mb-2">Koordinator G Jugend - Bambinis</h3>
+                <p class="text-gray-600 mb-4">Koordination der jüngsten Altersgruppe</p>
+                <a href="#contact" class="text-fcu-neon font-semibold hover:underline">Jetzt bewerben →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Join Section -->
+    <section class="bg-fcu-blue text-white py-16">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-12 text-center">Warum beim FCU mitmachen?</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center">
+                    <i class="fas fa-users text-fcu-neon text-4xl mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">Großes Netzwerk</h3>
+                    <p>Verbinde dich mit einer leidenschaftlichen Fußball-Community</p>
+                </div>
+                <div class="text-center">
+                    <i class="fas fa-heart text-fcu-neon text-4xl mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">Sinnvolle Arbeit</h3>
+                    <p>Gestalte die Zukunft von Jugend und Sport aktiv mit</p>
+                </div>
+                <div class="text-center">
+                    <i class="fas fa-star text-fcu-neon text-4xl mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">Persönlichkeit</h3>
+                    <p>Entwickle neue Fähigkeiten und sammle Erfahrungen</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="max-w-7xl mx-auto px-4 py-16">
+        <h2 class="text-3xl font-bold mb-8 text-center">📞 Kontakt</h2>
+        <div class="grid md:grid-cols-2 gap-8">
+            <div class="bg-gray-50 p-8 rounded-lg">
+                <h3 class="text-xl font-bold text-fcu-blue mb-4">Direkt kontaktieren</h3>
+                <p class="mb-2"><strong>Hans Seemann</strong> (1. Vorsitzender)</p>
+                <p class="text-gray-600 mb-4">
+                    <i class="fas fa-phone text-fcu-neon"></i>
+                    <a href="tel:+491632171720" class="text-fcu-blue hover:underline">0163-2171720</a>
+                </p>
+                <p class="text-gray-600">
+                    Gerne persönlich ansprechen zu den Trainingszeiten!
+                </p>
+            </div>
+            <div class="bg-gray-50 p-8 rounded-lg">
+                <h3 class="text-xl font-bold text-fcu-blue mb-4">Per E-Mail</h3>
+                <p class="text-gray-600 mb-4">
+                    <i class="fas fa-envelope text-fcu-neon"></i>
+                    <a href="mailto:orga@fcunterensingen.de" class="text-fcu-blue hover:underline">orga@fcunterensingen.de</a>
+                </p>
+                <p class="text-gray-600">
+                    Schreib uns eine E-Mail mit deiner Bewerbung oder Fragen
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-fcu-dark text-white py-12 mt-16">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="font-bold mb-4">FC Unterensingen</h3>
+                    <p class="text-gray-400">Der Sportverein für die ganze Familie</p>
+                </div>
+                <div>
+                    <h3 class="font-bold mb-4">Quicklinks</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="index.html" class="hover:text-fcu-neon transition">Startseite</a></li>
+                        <li><a href="vorstand.html" class="hover:text-fcu-neon transition">Vorstand</a></li>
+                        <li><a href="fsj.html" class="hover:text-fcu-neon transition">FSJ</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold mb-4">Social Media</h3>
+                    <div class="space-y-2">
+                        <a href="https://www.facebook.com/p/FC-Unterensingen-1993-eV-100043269447266/" class="text-gray-400 hover:text-fcu-neon transition">
+                            <i class="fab fa-facebook"></i> Facebook
+                        </a><br>
+                        <a href="https://www.instagram.com/fc_unterensingen/" class="text-gray-400 hover:text-fcu-neon transition">
+                            <i class="fab fa-instagram"></i> Instagram
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="font-bold mb-4">Kontakt</h3>
+                    <p class="text-gray-400 text-sm">
+                        <i class="fas fa-phone"></i> <a href="tel:+491632171720" class="hover:text-fcu-neon">0163-2171720</a><br>
+                        <i class="fas fa-envelope"></i> <a href="mailto:orga@fcunterensingen.de" class="hover:text-fcu-neon">orga@fcunterensingen.de</a>
+                    </p>
+                </div>
+            </div>
+            <hr class="border-gray-700 my-8">
+            <div class="text-center text-gray-400">
+                <p>&copy; 2026 FC Unterensingen. Alle Rechte vorbehalten.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
