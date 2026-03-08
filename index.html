@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FC Unterensingen - Ein Dorf. Ein Team.</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%23000000'/><text x='50' y='70' font-size='60' font-weight='bold' fill='%23ffffff' text-anchor='middle' font-family='Arial'>F</text></svg>">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -80,7 +82,7 @@
                 </div>
 
                 <!-- Jedermänner AH -->
-                <a href="#" class="hover:text-fcu-neon transition-colors font-medium">Jedermänner AH</a>
+                <a href="#teams-jugend" class="hover:text-fcu-neon transition-colors font-medium">Jedermänner AH</a>
 
                 <!-- Spielbetrieb -->
                 <a href="spielbetrieb.html" class="hover:text-fcu-neon transition-colors font-medium">Spielbetrieb</a>
@@ -121,7 +123,7 @@
                         <a href="c-jugend-juniorinnen.html" class="block hover:text-fcu-neon pl-2">C-Jugend</a>
                     </div>
                 </details>
-                <a href="#" class="block hover:text-fcu-neon">Jedermänner AH</a>
+                <a href="#teams-jugend" class="block hover:text-fcu-neon">Jedermänner AH</a>
                 <a href="spielbetrieb.html" class="block hover:text-fcu-neon">Spielbetrieb</a>
                 <a href="mitglieder.html" class="block hover:text-fcu-neon">Mitglieder</a>
             </div>
@@ -129,11 +131,16 @@
     </header>
 
     <!-- ANSTEHENDE VERANSTALTUNGEN -->
-    <div class="bg-fcu-neon text-fcu-dark py-4">
+    <div class="bg-fcu-neon text-fcu-dark py-4 sticky top-24 z-40 md:relative md:top-0">
         <div class="max-w-7xl mx-auto px-4">
             <div class="flex items-center justify-center gap-4 flex-wrap">
                 <i class="fas fa-calendar-alt text-lg font-bold"></i>
                 <span class="font-bold">📅 Nächste Hauptversammlung: <strong>27. März 2026 | 18:00 Uhr</strong></span>
+                <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Hauptversammlung+FC+Unterensingen&dates=20260327T180000/20260327T200000&details=Hauptversammlung+des+FC+Unterensingen+e.V." 
+                   target="_blank" 
+                   class="ml-4 bg-fcu-dark text-fcu-neon px-3 py-1 rounded text-sm font-bold hover:bg-blue-900 transition">
+                    <i class="fas fa-plus-circle mr-1"></i> In Kalender
+                </a>
             </div>
         </div>
     </div>
@@ -160,7 +167,7 @@
     <!-- HERO SECTION -->
     <section class="relative h-screen bg-gradient-to-r from-fcu-dark via-fcu-blue to-fcu-dark flex items-center justify-center overflow-hidden">
         <!-- Background Image Overlay -->
-        <div class="absolute inset-0 bg-cover bg-center opacity-20" style="background-image: url('https://images.unsplash.com/photo-1461896836934-ffe607ba8211?w=1200&h=800&fit=crop');"></div>
+        <div class="absolute inset-0 bg-cover bg-center opacity-30" style="background-image: url('https://images.unsplash.com/photo-1461896836934-ffe607ba8211?w=1200&h=800&fit=crop');"></div>
         
         <!-- Content -->
         <div class="relative z-10 text-center px-4 max-w-4xl">
@@ -278,7 +285,10 @@
                     </div>
                 </div>
                 <div class="bg-fcu-neon text-fcu-dark p-8 rounded-lg text-center">
-                    <h3 class="text-2xl font-black mb-6">Jetzt spenden</h3>
+                    <h3 class="text-2xl font-black mb-4">Jetzt spenden</h3>
+                    <div class="mb-4 flex justify-center">
+                        <img src="https://betterplace.org/assets/logo_long.png" alt="Betterplace Logo" class="h-8 opacity-70">
+                    </div>
                     <div class="space-y-4">
                         <a href="https://www.betterplace.org/de/projects/167087-umbau-vereinshuette-fc-unterensingen" 
                            target="_blank"
@@ -323,26 +333,31 @@
                 <div class="text-3xl mb-2">⚽</div>
                 <h4 class="font-bold text-fcu-blue">C-Jugend</h4>
                 <p class="text-sm text-gray-600">15-17 Jahre</p>
+                <p class="text-xs text-fcu-blue font-semibold mt-2">Mo/Do 19:30 Uhr</p>
             </a>
             <a href="d-jugend.html" class="bg-white border-2 border-fcu-blue p-6 rounded hover:shadow-lg transition text-center hover:bg-blue-50">
                 <div class="text-3xl mb-2">⚽</div>
                 <h4 class="font-bold text-fcu-blue">D-Jugend</h4>
                 <p class="text-sm text-gray-600">13-15 Jahre</p>
+                <p class="text-xs text-fcu-blue font-semibold mt-2">Di/Do 19:00 Uhr</p>
             </a>
             <a href="e1-jugend.html" class="bg-white border-2 border-fcu-blue p-6 rounded hover:shadow-lg transition text-center hover:bg-blue-50">
                 <div class="text-3xl mb-2">⚽</div>
                 <h4 class="font-bold text-fcu-blue">E1-Jugend</h4>
                 <p class="text-sm text-gray-600">11-13 Jahre</p>
+                <p class="text-xs text-fcu-blue font-semibold mt-2">Mi/Fr 18:30 Uhr</p>
             </a>
             <a href="e2-jugend.html" class="bg-white border-2 border-fcu-blue p-6 rounded hover:shadow-lg transition text-center hover:bg-blue-50">
                 <div class="text-3xl mb-2">⚽</div>
                 <h4 class="font-bold text-fcu-blue">E2-Jugend</h4>
                 <p class="text-sm text-gray-600">11-13 Jahre</p>
+                <p class="text-xs text-fcu-blue font-semibold mt-2">Di/Fr 18:00 Uhr</p>
             </a>
             <a href="f-jugend.html" class="bg-white border-2 border-fcu-blue p-6 rounded hover:shadow-lg transition text-center hover:bg-blue-50">
                 <div class="text-3xl mb-2">⚽</div>
                 <h4 class="font-bold text-fcu-blue">F-Jugend</h4>
                 <p class="text-sm text-gray-600">9-11 Jahre</p>
+                <p class="text-xs text-fcu-blue font-semibold mt-2">Mi/Sa 17:00 Uhr</p>
             </a>
         </div>
 
@@ -353,16 +368,19 @@
                 <div class="text-3xl mb-2">⚽</div>
                 <h4 class="font-bold text-pink-600">C-Jugend Juniorinnen</h4>
                 <p class="text-sm text-gray-600">15-17 Jahre</p>
+                <p class="text-xs text-pink-600 font-semibold mt-2">Mo/Do 19:30 Uhr</p>
             </a>
             <a href="d-jugend-juniorinnen.html" class="bg-white border-2 border-pink-400 p-6 rounded hover:shadow-lg transition text-center hover:bg-pink-50">
                 <div class="text-3xl mb-2">⚽</div>
                 <h4 class="font-bold text-pink-600">D-Jugend Juniorinnen</h4>
                 <p class="text-sm text-gray-600">13-15 Jahre</p>
+                <p class="text-xs text-pink-600 font-semibold mt-2">Di/Do 19:00 Uhr</p>
             </a>
             <a href="e-jugend-juniorinnen.html" class="bg-white border-2 border-pink-400 p-6 rounded hover:shadow-lg transition text-center hover:bg-pink-50">
                 <div class="text-3xl mb-2">⚽</div>
                 <h4 class="font-bold text-pink-600">E-Jugend Juniorinnen</h4>
                 <p class="text-sm text-gray-600">11-13 Jahre</p>
+                <p class="text-xs text-pink-600 font-semibold mt-2">Mi/Fr 18:30 Uhr</p>
             </a>
         </div>
     </section>
@@ -444,7 +462,7 @@
                     <strong>FC Unterensingen e. V.</strong><br>
                     Stadion Unterensingen<br>
                     Sportplatzstraße<br>
-                    72070 Unterensingen<br>
+                    72669 Unterensingen<br>
                     Deutschland
                 </p>
             </div>
@@ -469,16 +487,21 @@
                 <h3 class="text-2xl font-bold text-fcu-blue mb-4">
                     <i class="fas fa-share-alt text-fcu-neon"></i> Social Media
                 </h3>
-                <div class="space-y-3">
+                <div class="flex gap-6 justify-center">
                     <a href="https://www.facebook.com/p/FC-Unterensingen-1993-eV-100043269447266/" 
-                       target="_blank" class="flex items-center gap-2 text-gray-700 hover:text-fcu-neon transition">
-                        <i class="fab fa-facebook text-2xl text-blue-600"></i>
-                        <span>Facebook</span>
+                       target="_blank" class="text-4xl text-blue-600 hover:text-blue-800 transition-transform hover:scale-110"
+                       title="FC Unterensingen auf Facebook">
+                        <i class="fab fa-facebook"></i>
                     </a>
                     <a href="https://www.instagram.com/fc_unterensingen/" 
-                       target="_blank" class="flex items-center gap-2 text-gray-700 hover:text-fcu-neon transition">
-                        <i class="fab fa-instagram text-2xl bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent"></i>
-                        <span>Instagram</span>
+                       target="_blank" class="text-4xl bg-gradient-to-r from-purple-600 via-pink-600 to-orange-500 bg-clip-text text-transparent hover:scale-110 transition-transform"
+                       title="FC Unterensingen auf Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="mailto:orga@fcunterensingen.de" 
+                       class="text-4xl text-fcu-neon hover:text-yellow-300 transition-transform hover:scale-110"
+                       title="E-Mail an FC Unterensingen">
+                        <i class="fas fa-envelope"></i>
                     </a>
                 </div>
             </div>
@@ -556,7 +579,11 @@
             </div>
 
             <div class="border-t border-gray-700 pt-8 text-center text-gray-400">
-                <p>&copy; 2026 FC Unterensingen e.V. Alle Rechte vorbehalten. | <a href="https://fcunterensingen.de" class="text-fcu-neon hover:underline">www.fcunterensingen.de</a></p>
+                <p>&copy; 2026 FC Unterensingen e.V. Alle Rechte vorbehalten. | 
+                   <a href="https://fcunterensingen.de" class="text-fcu-neon hover:underline">www.fcunterensingen.de</a> |
+                   <a href="impressum.html" class="text-fcu-neon hover:underline">Impressum</a> |
+                   <a href="datenschutz.html" class="text-fcu-neon hover:underline">Datenschutz</a>
+                </p>
             </div>
         </div>
     </footer>

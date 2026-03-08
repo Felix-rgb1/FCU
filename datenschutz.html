@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datenschutz - FC Unterensingen</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%23000000'/><text x='50' y='70' font-size='60' font-weight='bold' fill='%23ffffff' text-anchor='middle' font-family='Arial'>F</text></svg>">
+</head>
+<body class="bg-white text-gray-900">
+    
+    <!-- STICKY HEADER (Same as index.html) -->
+    <header class="sticky top-0 z-50 bg-fcu-dark text-white shadow-lg">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+            <!-- Logo Row -->
+            <div class="flex items-center justify-between mb-4">
+                <a href="index.html" class="flex items-center space-x-2 hover:opacity-80 transition">
+                    <div class="w-12 h-12 bg-fcu-neon rounded-lg flex items-center justify-center font-bold text-fcu-dark text-xl">
+                        FCU
+                    </div>
+                    <div>
+                        <span class="text-xl font-bold block">FC Unterensingen</span>
+                        <span class="text-xs text-fcu-neon italic">FCU - das bist du</span>
+                    </div>
+                </a>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden text-fcu-neon text-2xl">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+
+            <!-- Desktop Navigation -->
+            <div class="hidden md:flex flex-wrap gap-8">
+                <a href="index.html" class="hover:text-fcu-neon transition-colors font-medium">← Startseite</a>
+            </div>
+        </nav>
+
+        <!-- Mobile Navigation -->
+        <div id="mobile-menu" class="hidden md:hidden bg-fcu-blue border-t border-fcu-neon">
+            <div class="px-4 py-4">
+                <a href="index.html" class="block hover:text-fcu-neon">← Startseite</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- DATENSCHUTZ CONTENT -->
+    <section class="max-w-4xl mx-auto px-4 py-20">
+        <h1 class="text-4xl font-black text-fcu-dark mb-12">🔒 Datenschutzerklärung</h1>
+
+        <div class="prose prose-lg prose-blue max-w-none space-y-8">
+            
+            <div>
+                <h2 class="text-2xl font-bold text-fcu-blue mb-4">1. Verantwortliche Stelle</h2>
+                <p>
+                    Verantwortlich für die Datenverarbeitung ist:<br>
+                    <strong>FC Unterensingen e.V.</strong><br>
+                    Stadion Unterensingen<br>
+                    Sportplatzstraße<br>
+                    72669 Unterensingen<br>
+                    <strong>E-Mail:</strong> <a href="mailto:orga@fcunterensingen.de" class="text-fcu-blue hover:underline">orga@fcunterensingen.de</a>
+                </p>
+            </div>
+
+            <div>
+                <h2 class="text-2xl font-bold text-fcu-blue mb-4">2. Erfassung und Verarbeitung personenbezogener Daten</h2>
+                <p class="text-gray-700">
+                    <strong>Browserdaten:</strong> Beim Besuch unserer Website erfasst unser Server automatisch Informationen wie IP-Adresse, Browsertyp, Betriebssystem und Zugriffsdatum für technische Optimierung und Sicherheit.
+                </p>
+
+                <p class="text-gray-700">
+                    <strong>Kontaktformulare:</strong> Falls vorhanden, verarbeiten wir nur die Daten, die Sie freiwillig eingeben. Diese werden verwendet, um Ihre Anfrage zu beantworten.
+                </p>
+
+                <p class="text-gray-700">
+                    <strong>Cookies:</strong> Diese Website verwendet Cookies für essentielle Funktionen (Mobile Menu-Status). Sie können Cookies in Ihren Browsereinstellungen deaktivieren.
+                </p>
+            </div>
+
+            <div>
+                <h2 class="text-2xl font-bold text-fcu-blue mb-4">3. Externe Inhalte und Services</h2>
+                <p class="text-gray-700">
+                    <strong>Fußball.de:</strong> Das Website enthält ein iframe von fussball.de. Beim Abruf können Daten an fussball.de übertragen werden. Bitte beachten Sie deren Datenschutzerklärung.
+                </p>
+
+                <p class="text-gray-700">
+                    <strong>Betterplace:</strong> Das Spendensystem wird über betterplace.org bereitgestellt. Daten bei Spenden werden nach deren Datenschutzerklärung verarbeitet.
+                </p>
+
+                <p class="text-gray-700">
+                    <strong>Externe Links:</strong> Für externe Websites sind deren Datenschutzerklärungen verantwortlich. Wir haben keinen Einfluss auf deren Datenverarbeitung.
+                </p>
+            </div>
+
+            <div>
+                <h2 class="text-2xl font-bold text-fcu-blue mb-4">4. Ihre Rechte</h2>
+                <p class="text-gray-700">
+                    Sie haben das Recht auf:
+                </p>
+                <ul class="list-disc list-inside text-gray-700 space-y-2">
+                    <li>Auskunft über Ihre gespeicherten Daten</li>
+                    <li>Berichtigung unrichtiger Daten</li>
+                    <li>Löschung Ihrer Daten</li>
+                    <li>Widerspruch gegen die Verarbeitung</li>
+                    <li>Beschwerde bei der Datenschutzbehörde</li>
+                </ul>
+                <p class="mt-4 text-gray-700">
+                    Kontaktieren Sie uns unter <a href="mailto:orga@fcunterensingen.de" class="text-fcu-blue hover:underline">orga@fcunterensingen.de</a>
+                </p>
+            </div>
+
+            <div>
+                <h2 class="text-2xl font-bold text-fcu-blue mb-4">5. Sicherheit</h2>
+                <p class="text-gray-700">
+                    Wir schützen Ihre Daten durch technische und organisatorische Maßnahmen. Dies beinhaltet die Verwendung von Verschlüsselung und Zugriffskontrolle. Es können jedoch nie absolute Sicherheit garantiert werden.
+                </p>
+            </div>
+
+            <div>
+                <h2 class="text-2xl font-bold text-fcu-blue mb-4">6. Änderungen dieser Erklärung</h2>
+                <p class="text-gray-700">
+                    Wir behalten uns das Recht vor, diese Datenschutzerklärung jederzeit anzupassen. Die aktuelle Version ist jeweils gültig.
+                </p>
+            </div>
+
+            <div class="bg-blue-50 p-6 rounded-lg border-l-4 border-fcu-blue">
+                <p class="text-sm text-gray-700">
+                    <strong>Hinweis:</strong> Diese Datenschutzerklärung ist eine Standardisierung. Für spezifische Fragen wenden Sie sich bitte direkt an <a href="mailto:orga@fcunterensingen.de" class="text-fcu-blue hover:underline">orga@fcunterensingen.de</a>
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- BACK TO HOME -->
+    <section class="bg-fcu-dark text-white py-8 text-center mt-12">
+        <a href="index.html" class="inline-block bg-fcu-neon text-fcu-dark px-8 py-3 rounded font-bold hover:bg-yellow-300 transition">
+            ← Zurück zur Startseite
+        </a>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-fcu-dark text-white py-12 border-t-4 border-fcu-neon">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="border-t border-gray-700 pt-8 text-center text-gray-400">
+                <p>&copy; 2026 FC Unterensingen e.V. Alle Rechte vorbehalten. | 
+                   <a href="https://fcunterensingen.de" class="text-fcu-neon hover:underline">www.fcunterensingen.de</a> |
+                   <a href="impressum.html" class="text-fcu-neon hover:underline">Impressum</a> |
+                   <a href="datenschutz.html" class="text-fcu-neon hover:underline">Datenschutz</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        if (mobileMenuBtn) {
+            mobileMenuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+        }
+    </script>
+</body>
+</html>
