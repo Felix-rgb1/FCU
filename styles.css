@@ -45,14 +45,6 @@
 /* Smooth Scrolling */
 html {
     scroll-behavior: smooth;
-    box-sizing: border-box;
-}
-
-/* Box-Sizing für alle Elemente */
-*,
-*::before,
-*::after {
-    box-sizing: inherit;
 }
 
 /* Custom Font Smoothing */
@@ -405,34 +397,18 @@ header.header-scrolled {
 }
 
 /* ============================================
-   LAYOUT & RESPONSIVENESS
+   SECTION SPACING OPTIMIERUNG
    ============================================ */
-
 section {
-    padding: 3rem 1.5rem;
-    position: relative;
+    padding-top: var(--spacing-2xl);
+    padding-bottom: var(--spacing-2xl);
 }
 
-section:not(.bg-fcu-primary):not(.bg-fcu-dark) {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-section.bg-fcu-primary,
-section.bg-fcu-dark {
-    padding: 3rem 1.5rem;
-}
-
-section.bg-fcu-primary > div,
-section.bg-fcu-dark > div {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
+@media (max-width: 768px) {
+    section {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
 }
 
 /* ============================================
@@ -725,54 +701,20 @@ section:first-of-type[class*="h-screen"]::after {
 }
 
 /* ============================================
-   FARB- & KONTRAST-SYSTEM
+   MODERNE SECTION DIVIDERS
    ============================================ */
-
-/* Text auf FCU-Accent (Gelb) MUSS dunkle Farbe sein */
-.bg-fcu-accent,
-.badge {
-    color: var(--fcu-dark) !important;
+section {
+    position: relative;
 }
 
-.bg-fcu-accent a,
-.badge a {
-    color: var(--fcu-dark) !important;
-}
-
-.bg-fcu-accent a:hover,
-.badge a:hover {
-    color: var(--fcu-primary) !important;
-}
-
-/* Text auf dunklem Blau MUSS hell sein */
-.bg-fcu-dark,
-.bg-fcu-primary,
-header {
-    color: var(--text-light);
-}
-
-.bg-fcu-dark a,
-.bg-fcu-primary a,
-header a {
-    color: var(--text-light);
-    transition: color 0.3s ease;
-}
-
-.bg-fcu-dark a:hover,
-.bg-fcu-primary a:hover,
-header a:hover {
-    color: var(--fcu-accent);
-}
-
-/* Kontrast-sichere Link-Farben */
-a {
-    color: var(--fcu-primary);
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-a:hover {
-    color: var(--fcu-dark);
+section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(0, 102, 204, 0.3), transparent);
 }
 
 /* ============================================
