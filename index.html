@@ -6,6 +6,11 @@
     <title>FC Unterensingen - Ein Dorf. Ein Team.</title>
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%23000000'/><text x='50' y='70' font-size='60' font-weight='bold' fill='%23ffffff' text-anchor='middle' font-family='Arial'>F</text></svg>">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Tailwind & Styles -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -196,19 +201,19 @@
     </section>
 
     <!-- NEWS SECTION -->
-    <section id="news" class="max-w-7xl mx-auto px-4 py-20 md:py-32">
+    <section id="news" class="max-w-7xl mx-auto px-4 py-20 md:py-32 scroll-reveal">
         <h2 class="text-4xl font-black text-fcu-primary mb-12 text-center">
             📰 Aktuelle News
         </h2>
         
         <div class="grid md:grid-cols-3 gap-8 mb-12">
             <!-- FSJ News -->
-            <div class="bg-white border-2 border-fcu-blue rounded-lg overflow-hidden hover:shadow-xl transition-all transform hover:-translate-y-2 team-card">
-                <div class="h-48 bg-gradient-to-br from-fcu-primary to-fcu-dark flex items-center justify-center text-5xl">
+            <div class="bg-white border-2 border-fcu-blue rounded-lg overflow-hidden hover:shadow-xl transition-all transform hover:-translate-y-2 team-card scroll-reveal">
+                <div class="h-48 bg-gradient-to-br from-fcu-primary to-fcu-dark flex items-center justify-center text-5xl news-card-image">
                     🌟
                 </div>
                 <div class="p-6">
-                    <span class="text-fcu-primary font-bold text-sm">FSJ PROGRAMM</span>
+                    <span class="badge">FSJ Programm</span>
                     <h3 class="text-2xl font-bold text-fcu-dark mt-2 mb-3">
                         FSJ 2025/2026 startet bald!
                     </h3>
@@ -222,12 +227,12 @@
             </div>
 
             <!-- Umbau News -->
-            <div class="bg-white border-2 border-fcu-dark p-6 rounded hover:shadow-lg transition text-center hover:bg-blue-50">
-                <div class="h-48 bg-gradient-to-br from-fcu-accent to-yellow-400 flex items-center justify-center text-5xl">
+            <div class="bg-white border-2 border-fcu-dark p-6 rounded hover:shadow-lg transition text-center hover:bg-blue-50 team-card scroll-reveal">
+                <div class="h-48 bg-gradient-to-br from-fcu-accent to-yellow-400 flex items-center justify-center text-5xl news-card-image">
                     🏗️
                 </div>
                 <div class="p-6">
-                    <span class="text-fcu-primary font-bold text-sm">UMBAU PROJEKT</span>
+                    <span class="badge">Umbau Projekt</span>
                     <h3 class="text-2xl font-bold text-fcu-dark mt-2 mb-3">
                         Umbau Vereinshaus im Fokus
                     </h3>
@@ -241,12 +246,12 @@
             </div>
 
             <!-- Jobs News -->
-            <div class="bg-white border-2 border-fcu-blue rounded-lg overflow-hidden hover:shadow-xl transition-all transform hover:-translate-y-2 team-card">
-                <div class="h-48 bg-gradient-to-br from-fcu-primary to-fcu-dark flex items-center justify-center text-5xl">
+            <div class="bg-white border-2 border-fcu-blue rounded-lg overflow-hidden hover:shadow-xl transition-all transform hover:-translate-y-2 team-card scroll-reveal">
+                <div class="h-48 bg-gradient-to-br from-fcu-primary to-fcu-dark flex items-center justify-center text-5xl news-card-image">
                     💼
                 </div>
                 <div class="p-6">
-                    <span class="text-fcu-primary font-bold text-sm">STELLENANGEBOT</span>
+                    <span class="badge">Stellenangebot</span>
                     <h3 class="text-2xl font-bold text-fcu-dark mt-2 mb-3">
                         11 Positionen im Verein offen
                     </h3>
@@ -262,7 +267,7 @@
     </section>
 
     <!-- SPENDENAUFRUF -->
-    <section class="bg-gradient-to-r from-fcu-primary via-fcu-dark to-fcu-primary text-white py-20 md:py-32">
+    <section class="bg-gradient-to-r from-fcu-primary via-fcu-dark to-fcu-primary text-white py-20 md:py-32 scroll-reveal">
         <div class="max-w-7xl mx-auto px-4">
             <div class="grid md:grid-cols-2 gap-8 items-center">
                 <div>
@@ -313,19 +318,30 @@
     </section>
 
     <!-- SCHEDULE SECTION -->
-    <section id="schedule" class="max-w-7xl mx-auto px-4 py-20 md:py-32">
+    <section id="schedule" class="max-w-7xl mx-auto px-4 py-20 md:py-32 scroll-reveal">
         <h2 class="text-4xl font-black text-fcu-primary mb-12 text-center">
-            📅 Spielplan
+            📅 Spielplan - Live Ergebnisse
         </h2>
         
-        <div class="bg-white border-2 border-fcu-primary rounded-lg p-8 box-shadow-lg">
+        <div class="scoreboard">
+            <div class="match-result">
+                <span class="team-name">⚽ FCU Herren</span>
+                <span class="score">3:1</span>
+                <span>Nachbarverein</span>
+            </div>
+            <div class="match-result">
+                <span class="team-name">⚽ FCU C-Jugend</span>
+                <span class="score">2:0</span>
+                <span>SG Geberit</span>
+            </div>
+            <p class="text-center text-gray-300 mt-8">Detaillierter Spielplan von Fussball.de:</p>
             <iframe width="100%" height="600" src="https://www.fussball.de/verein/fc-unterensingen-1993-ev/-/saison/2025/2026" 
-                    frameborder="0" scrolling="yes" class="rounded-lg"></iframe>
+                    frameborder="0" scrolling="yes" style="border-radius: 12px; margin-top: 1.5rem;"></iframe>
         </div>
     </section>
 
     <!-- TEAMS SECTION -->
-    <section id="teams-jugend" class="max-w-7xl mx-auto px-4 py-20 md:py-32">
+    <section id="teams-jugend" class="max-w-7xl mx-auto px-4 py-20 md:py-32 scroll-reveal">
         <h2 class="text-4xl font-black text-fcu-primary mb-12 text-center">
             ⚽ Unsere Mannschaften
         </h2>
@@ -390,7 +406,7 @@
     </section>
 
     <!-- CLUB SECTION -->
-    <section id="club" class="bg-fcu-primary text-white py-20 md:py-32">
+    <section id="club" class="bg-fcu-primary text-white py-20 md:py-32 scroll-reveal">
         <div class="max-w-7xl mx-auto px-4">
             <h2 class="text-4xl font-black mb-12 text-center text-white">
                 🏛️ Der FC Unterensingen
@@ -451,7 +467,7 @@
     </section>
 
     <!-- CONTACT SECTION -->
-    <section id="contact" class="max-w-7xl mx-auto px-4 py-20 md:py-32">
+    <section id="contact" class="max-w-7xl mx-auto px-4 py-20 md:py-32 scroll-reveal">
         <h2 class="text-4xl font-black text-fcu-primary mb-12 text-center">
             📞 Kontakt & Infos
         </h2>
@@ -595,6 +611,49 @@
     <!-- Scripts -->
     <script src="script.js"></script>
     <script>
+        // ============================================
+        // SCROLL-REVEAL ANIMATION
+        // ============================================
+        const revealElements = document.querySelectorAll('.scroll-reveal');
+        
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('revealed');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+        
+        revealElements.forEach(element => {
+            observer.observe(element);
+        });
+
+        // ============================================
+        // BACK-TO-TOP BUTTON
+        // ============================================
+        const backToTopBtn = document.getElementById('back-to-top');
+        
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                backToTopBtn.classList.add('show');
+            } else {
+                backToTopBtn.classList.remove('show');
+            }
+        });
+        
+        backToTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
         // Mobile Menu Toggle
         const mobileMenuBtn = document.getElementById('mobile-menu-btn');
         const mobileMenu = document.getElementById('mobile-menu');
@@ -642,7 +701,7 @@
             card.classList.add('team-card');
         });
 
-        const clubCards = document.querySelectorAll('.bg-fcu-blue[class*="rounded-lg"][class*="hover:shadow"]');
+        const clubCards = document.querySelectorAll('.bg-fcu-light[class*="rounded-lg"][class*="hover:shadow"]');
         clubCards.forEach(card => {
             if (!card.classList.contains('team-card')) {
                 card.classList.add('club-card');
@@ -656,5 +715,7 @@
             }
         });
     </script>
-</body>
-</html>
+<!-- BACK-TO-TOP BUTTON -->
+    <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
