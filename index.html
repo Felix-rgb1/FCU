@@ -50,7 +50,7 @@
                 </a>
 
                 <!-- Mobile Menu Button -->
-                <button id="mobile-menu-btn" class="md:hidden text-fcu-neon text-2xl">
+                <button id="mobile-menu-btn" class="md:hidden text-fcu-accent text-2xl hover:text-white transition-colors">
                     <i class="fas fa-bars"></i>
                 </button>
             </div>
@@ -174,14 +174,14 @@
     </div>
 
     <!-- HERO SECTION -->
-    <section class="relative h-screen bg-gradient-to-r from-fcu-dark via-fcu-blue to-fcu-dark flex items-center justify-center overflow-hidden">
+    <section class="relative h-screen bg-gradient-to-r from-fcu-dark via-fcu-primary to-fcu-dark flex items-center justify-center overflow-hidden">
         <!-- Background Image Overlay -->
         <div class="absolute inset-0 bg-cover bg-center opacity-30" style="background-image: url('https://images.unsplash.com/photo-1461896836934-ffe607ba8211?w=1200&h=800&fit=crop');"></div>
         
         <!-- Content -->
         <div class="relative z-10 text-center px-4 max-w-4xl">
             <h1 class="text-6xl md:text-7xl font-black text-white mb-6 leading-tight drop-shadow-lg">
-                Ein Dorf.<br><span class="text-fcu-neon">Ein Team.</span>
+                Ein Dorf.<br><span class="text-fcu-accent animate-pulse">Ein Team.</span>
             </h1>
             <p class="text-2xl md:text-3xl text-gray-200 mb-8 font-bold">
                 FCU - Das bist du
@@ -196,7 +196,7 @@
 
         <!-- Scroll Indicator -->
         <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-            <i class="fas fa-chevron-down text-fcu-neon text-3xl"></i>
+            <i class="fas fa-chevron-down text-fcu-accent text-3xl"></i>
         </div>
     </section>
 
@@ -208,8 +208,8 @@
         
         <div class="grid md:grid-cols-3 gap-8 mb-12">
             <!-- FSJ News -->
-            <div class="bg-white border-2 border-fcu-blue rounded-lg overflow-hidden hover:shadow-xl transition-all transform hover:-translate-y-2 team-card scroll-reveal">
-                <div class="h-48 bg-gradient-to-br from-fcu-primary to-fcu-dark flex items-center justify-center text-5xl news-card-image">
+            <div class="bg-white border-2 border-fcu-primary rounded-lg overflow-hidden hover:shadow-2xl transition-all transform hover:-translate-y-2 team-card scroll-reveal group">
+                <div class="h-48 bg-gradient-to-br from-fcu-primary to-fcu-dark flex items-center justify-center text-5xl news-card-image group-hover:shadow-lg">
                     🌟
                 </div>
                 <div class="p-6">
@@ -220,15 +220,15 @@
                     <p class="text-gray-600 mb-4">
                         Das Freiwillige Soziale Jahr Sport und Schule bietet dir 400€ Taschengeld, C-Lizenz Ausbildung und unvergessliche Erfahrungen.
                     </p>
-                    <a href="fsj.html" class="text-fcu-primary font-bold hover:underline">
+                    <a href="fsj.html" class="text-fcu-primary font-bold hover:text-fcu-accent transition-colors">
                         Mehr erfahren →
                     </a>
                 </div>
             </div>
 
             <!-- Umbau News -->
-            <div class="bg-white border-2 border-fcu-dark p-6 rounded hover:shadow-lg transition text-center hover:bg-blue-50 team-card scroll-reveal">
-                <div class="h-48 bg-gradient-to-br from-fcu-accent to-yellow-400 flex items-center justify-center text-5xl news-card-image">
+            <div class="bg-white border-2 border-fcu-primary rounded-lg overflow-hidden hover:shadow-2xl transition-all transform hover:-translate-y-2 team-card scroll-reveal group">
+                <div class="h-48 bg-gradient-to-br from-fcu-accent to-yellow-400 flex items-center justify-center text-5xl news-card-image group-hover:shadow-lg">
                     🏗️
                 </div>
                 <div class="p-6">
@@ -239,15 +239,15 @@
                     <p class="text-gray-600 mb-4">
                         Das Materiallager wird zum neuen Herzstück des Vereins. Unterstütze unser Projekt mit einer Spende!
                     </p>
-                    <a href="umbau-vereinshaus.html" class="text-fcu-primary font-bold hover:underline">
+                    <a href="umbau-vereinshaus.html" class="text-fcu-primary font-bold hover:text-fcu-accent transition-colors">
                         Mehr erfahren →
                     </a>
                 </div>
             </div>
 
             <!-- Jobs News -->
-            <div class="bg-white border-2 border-fcu-blue rounded-lg overflow-hidden hover:shadow-xl transition-all transform hover:-translate-y-2 team-card scroll-reveal">
-                <div class="h-48 bg-gradient-to-br from-fcu-primary to-fcu-dark flex items-center justify-center text-5xl news-card-image">
+            <div class="bg-white border-2 border-fcu-primary rounded-lg overflow-hidden hover:shadow-2xl transition-all transform hover:-translate-y-2 team-card scroll-reveal group">
+                <div class="h-48 bg-gradient-to-br from-fcu-primary to-fcu-dark flex items-center justify-center text-5xl news-card-image group-hover:shadow-lg">
                     💼
                 </div>
                 <div class="p-6">
@@ -258,7 +258,7 @@
                     <p class="text-gray-600 mb-4">
                         Wir suchen engagierte Menschen! Von Ehrenamtsbeauftragtem bis zum Projektmanager - deine Unterstützung zählt.
                     </p>
-                    <a href="jobs.html" class="text-fcu-primary font-bold hover:underline">
+                    <a href="jobs.html" class="text-fcu-primary font-bold hover:text-fcu-accent transition-colors">
                         Zur Stellenbörse →
                     </a>
                 </div>
@@ -355,27 +355,27 @@
                 <p class="text-sm text-gray-600">15-17 Jahre</p>
                 <p class="text-xs text-fcu-primary font-semibold mt-2">Mo/Do 19:30 Uhr</p>
             </a>
-            <a href="d-jugend.html" class="bg-white border-2 border-fcu-primary p-6 rounded hover:shadow-lg transition text-center hover:bg-blue-50 team-card">
-                <div class="text-3xl mb-2">⚽</div>
-                <h4 class="font-bold text-fcu-primary">D-Jugend</h4>
+            <a href="d-jugend.html" class="bg-white border-2 border-fcu-primary p-6 rounded hover:shadow-2xl transition-all transform hover:-translate-y-2 text-center hover:bg-blue-50 team-card group">
+                <div class="text-3xl mb-2 group-hover:scale-125 transition-transform duration-300">⚽</div>
+                <h4 class="font-bold text-fcu-primary group-hover:text-fcu-accent transition-colors">D-Jugend</h4>
                 <p class="text-sm text-gray-600">13-15 Jahre</p>
                 <p class="text-xs text-fcu-primary font-semibold mt-2">Di/Do 19:00 Uhr</p>
             </a>
-            <a href="e1-jugend.html" class="bg-white border-2 border-fcu-primary p-6 rounded hover:shadow-lg transition text-center hover:bg-blue-50 team-card">
-                <div class="text-3xl mb-2">⚽</div>
-                <h4 class="font-bold text-fcu-primary">E1-Jugend</h4>
+            <a href="e1-jugend.html" class="bg-white border-2 border-fcu-primary p-6 rounded hover:shadow-2xl transition-all transform hover:-translate-y-2 text-center hover:bg-blue-50 team-card group">
+                <div class="text-3xl mb-2 group-hover:scale-125 transition-transform duration-300">⚽</div>
+                <h4 class="font-bold text-fcu-primary group-hover:text-fcu-accent transition-colors">E1-Jugend</h4>
                 <p class="text-sm text-gray-600">11-13 Jahre</p>
                 <p class="text-xs text-fcu-primary font-semibold mt-2">Mi/Fr 18:30 Uhr</p>
             </a>
-            <a href="e2-jugend.html" class="bg-white border-2 border-fcu-primary p-6 rounded hover:shadow-lg transition text-center hover:bg-blue-50 team-card">
-                <div class="text-3xl mb-2">⚽</div>
-                <h4 class="font-bold text-fcu-primary">E2-Jugend</h4>
+            <a href="e2-jugend.html" class="bg-white border-2 border-fcu-primary p-6 rounded hover:shadow-2xl transition-all transform hover:-translate-y-2 text-center hover:bg-blue-50 team-card group">
+                <div class="text-3xl mb-2 group-hover:scale-125 transition-transform duration-300">⚽</div>
+                <h4 class="font-bold text-fcu-primary group-hover:text-fcu-accent transition-colors">E2-Jugend</h4>
                 <p class="text-sm text-gray-600">11-13 Jahre</p>
                 <p class="text-xs text-fcu-primary font-semibold mt-2">Di/Fr 18:00 Uhr</p>
             </a>
-            <a href="f-jugend.html" class="bg-white border-2 border-fcu-primary p-6 rounded hover:shadow-lg transition text-center hover:bg-blue-50 team-card">
-                <div class="text-3xl mb-2">⚽</div>
-                <h4 class="font-bold text-fcu-primary">F-Jugend</h4>
+            <a href="f-jugend.html" class="bg-white border-2 border-fcu-primary p-6 rounded hover:shadow-2xl transition-all transform hover:-translate-y-2 text-center hover:bg-blue-50 team-card group">
+                <div class="text-3xl mb-2 group-hover:scale-125 transition-transform duration-300">⚽</div>
+                <h4 class="font-bold text-fcu-primary group-hover:text-fcu-accent transition-colors">F-Jugend</h4>
                 <p class="text-sm text-gray-600">9-11 Jahre</p>
                 <p class="text-xs text-fcu-primary font-semibold mt-2">Mi/Sa 17:00 Uhr</p>
             </a>
@@ -390,15 +390,15 @@
                 <p class="text-sm text-gray-600">15-17 Jahre</p>
                 <p class="text-xs text-pink-600 font-semibold mt-2">Mo/Do 19:30 Uhr</p>
             </a>
-            <a href="d-jugend-juniorinnen.html" class="bg-white border-2 border-pink-500 p-6 rounded hover:shadow-lg transition text-center hover:bg-pink-50 team-card">
-                <div class="text-3xl mb-2">⚽</div>
-                <h4 class="font-bold text-pink-600">D-Jugend Juniorinnen</h4>
+            <a href="d-jugend-juniorinnen.html" class="bg-white border-2 border-pink-500 p-6 rounded hover:shadow-2xl transition-all transform hover:-translate-y-2 text-center hover:bg-pink-50 team-card group">
+                <div class="text-3xl mb-2 group-hover:scale-125 transition-transform duration-300">⚽</div>
+                <h4 class="font-bold text-pink-600 group-hover:text-red-500 transition-colors">D-Jugend Juniorinnen</h4>
                 <p class="text-sm text-gray-600">13-15 Jahre</p>
                 <p class="text-xs text-pink-600 font-semibold mt-2">Di/Do 19:00 Uhr</p>
             </a>
-            <a href="e-jugend-juniorinnen.html" class="bg-white border-2 border-pink-500 p-6 rounded hover:shadow-lg transition text-center hover:bg-pink-50 team-card">
-                <div class="text-3xl mb-2">⚽</div>
-                <h4 class="font-bold text-pink-600">E-Jugend Juniorinnen</h4>
+            <a href="e-jugend-juniorinnen.html" class="bg-white border-2 border-pink-500 p-6 rounded hover:shadow-2xl transition-all transform hover:-translate-y-2 text-center hover:bg-pink-50 team-card group">
+                <div class="text-3xl mb-2 group-hover:scale-125 transition-transform duration-300">⚽</div>
+                <h4 class="font-bold text-pink-600 group-hover:text-red-500 transition-colors">E-Jugend Juniorinnen</h4>
                 <p class="text-sm text-gray-600">11-13 Jahre</p>
                 <p class="text-xs text-pink-600 font-semibold mt-2">Mi/Fr 18:30 Uhr</p>
             </a>
@@ -420,29 +420,29 @@
                     <p class="text-gray-700 mb-4">
                         Hans Seemann, Sascha Müller, Manuel Moreno und weitere engagierte Vorstandsmitglieder führen unseren Verein.
                     </p>
-                    <a href="vorstand.html" class="text-fcu-primary hover:underline font-bold">
+                    <a href="vorstand.html" class="text-fcu-primary hover:text-fcu-accent font-bold transition-colors">
                         Vorstand anschauen →
                     </a>
                 </div>
 
-                <div class="bg-fcu-light p-8 rounded-lg hover:shadow-xl transition club-card border-l-4 border-fcu-accent">
-                    <div class="text-5xl mb-4">💼</div>
+                <div class="bg-fcu-light p-8 rounded-lg hover:shadow-2xl transition-all transform hover:-translate-y-2 club-card border-l-4 border-fcu-accent group">
+                    <div class="text-5xl mb-4 group-hover:scale-110 transition-transform">💼</div>
                     <h3 class="text-2xl font-bold text-fcu-dark mb-2">Jobs & FSJ</h3>
                     <p class="text-gray-700 mb-4">
                         Wir suchen engagierte Menschen! 11 Positionen sind offen und das FSJ 2025/2026 startet bald.
                     </p>
-                    <a href="jobs.html" class="text-fcu-primary hover:underline font-bold">
+                    <a href="jobs.html" class="text-fcu-primary hover:text-fcu-accent font-bold transition-colors">
                         Zur Stellenbörse →
                     </a>
                 </div>
 
-                <div class="bg-fcu-light p-8 rounded-lg hover:shadow-xl transition club-card border-l-4 border-fcu-accent">
-                    <div class="text-5xl mb-4">🏢</div>
+                <div class="bg-fcu-light p-8 rounded-lg hover:shadow-2xl transition-all transform hover:-translate-y-2 club-card border-l-4 border-fcu-accent group">
+                    <div class="text-5xl mb-4 group-hover:scale-110 transition-transform">🏢</div>
                     <h3 class="text-2xl font-bold text-fcu-dark mb-2">Sportstätten</h3>
                     <p class="text-gray-700 mb-4">
                         Modernes Großfeld, Kleinfeld, Sporthalle und Vereinshaus - top ausgestattet für professionelles Training.
                     </p>
-                    <a href="sportstaetten.html" class="text-fcu-primary hover:underline font-bold">
+                    <a href="sportstaetten.html" class="text-fcu-primary hover:text-fcu-accent font-bold transition-colors">
                         Mehr Info →
                     </a>
                 </div>
@@ -453,14 +453,14 @@
                 <a href="mitglieder.html" class="bg-fcu-accent text-fcu-dark p-4 rounded font-bold hover:bg-yellow-400 hover:shadow-lg transition-all transform hover:-translate-y-1 group">
                     <span class="block group-hover:scale-125 transition-transform">📥</span> Downloads
                 </a>
-                <a href="fan-shop.html" class="bg-fcu-accent text-fcu-dark p-4 rounded font-bold hover:bg-yellow-400 transition">
-                    🛍️ Fan-Shop
+                <a href="fan-shop.html" class="bg-fcu-accent text-fcu-dark p-4 rounded font-bold hover:bg-yellow-400 hover:shadow-lg transition-all transform hover:-translate-y-1 group">
+                    <span class="block group-hover:scale-125 transition-transform">🛍️</span> Fan-Shop
                 </a>
-                <a href="spielbetrieb.html" class="bg-fcu-accent text-fcu-dark p-4 rounded font-bold hover:bg-yellow-400 transition">
-                    ⚽ Spielbetrieb
+                <a href="spielbetrieb.html" class="bg-fcu-accent text-fcu-dark p-4 rounded font-bold hover:bg-yellow-400 hover:shadow-lg transition-all transform hover:-translate-y-1 group">
+                    <span class="block group-hover:scale-125 transition-transform">⚽</span> Spielbetrieb
                 </a>
-                <a href="umbau-vereinshaus.html" class="bg-fcu-accent text-fcu-dark p-4 rounded font-bold hover:bg-yellow-400 transition">
-                    🏗️ Umbau
+                <a href="umbau-vereinshaus.html" class="bg-fcu-accent text-fcu-dark p-4 rounded font-bold hover:bg-yellow-400 hover:shadow-lg transition-all transform hover:-translate-y-1 group">
+                    <span class="block group-hover:scale-125 transition-transform">🏗️</span> Umbau
                 </a>
             </div>
         </div>
@@ -474,9 +474,9 @@
 
         <div class="grid md:grid-cols-3 gap-8 mb-12">
             <!-- Adresse -->
-            <div class="bg-fcu-light p-8 rounded-lg border-2 border-fcu-primary">
-                <h3 class="text-2xl font-bold text-fcu-primary mb-4">
-                    <i class="fas fa-map-marker-alt mr-2"></i> Adresse
+            <div class="bg-fcu-light p-8 rounded-lg border-2 border-fcu-primary hover:shadow-2xl transition-all transform hover:-translate-y-2 group">
+                <h3 class="text-2xl font-bold text-fcu-primary mb-4 flex items-center gap-2 group-hover:text-fcu-accent transition-colors">
+                    <i class="fas fa-map-marker-alt"></i> Adresse
                 </h3>
                 <p class="text-fcu-dark mb-2">
                     <strong>FC Unterensingen e. V.</strong><br>
@@ -488,38 +488,38 @@
             </div>
 
             <!-- Email & Telefon -->
-            <div class="bg-fcu-light p-8 rounded-lg border-2 border-fcu-primary">
-                <h3 class="text-2xl font-bold text-fcu-primary mb-4">
-                    <i class="fas fa-envelope mr-2"></i> Kontakt
+            <div class="bg-fcu-light p-8 rounded-lg border-2 border-fcu-primary hover:shadow-2xl transition-all transform hover:-translate-y-2 group">
+                <h3 class="text-2xl font-bold text-fcu-primary mb-4 flex items-center gap-2 group-hover:text-fcu-accent transition-colors">
+                    <i class="fas fa-envelope"></i> Kontakt
                 </h3>
                 <p class="text-fcu-dark mb-3">
                     <strong>Organisation:</strong><br>
-                    <a href="mailto:orga@fcunterensingen.de" class="text-fcu-primary hover:underline font-semibold">orga@fcunterensingen.de</a>
+                    <a href="mailto:orga@fcunterensingen.de" class="text-fcu-primary hover:text-fcu-accent font-semibold transition-colors">orga@fcunterensingen.de</a>
                 </p>
                 <p class="text-fcu-dark">
                     <strong>Telefon:</strong><br>
-                    <a href="tel:+491632171720" class="text-fcu-primary hover:underline font-semibold">0163-2171720</a> (Hans Seemann)
+                    <a href="tel:+491632171720" class="text-fcu-primary hover:text-fcu-accent font-semibold transition-colors">0163-2171720</a> (Hans Seemann)
                 </p>
             </div>
 
             <!-- Social Media -->
-            <div class="bg-fcu-light p-8 rounded-lg border-2 border-fcu-primary">
-                <h3 class="text-2xl font-bold text-fcu-primary mb-4">
-                    <i class="fas fa-share-alt mr-2"></i> Social Media
+            <div class="bg-fcu-light p-8 rounded-lg border-2 border-fcu-primary hover:shadow-2xl transition-all transform hover:-translate-y-2 group">
+                <h3 class="text-2xl font-bold text-fcu-primary mb-4 flex items-center gap-2 group-hover:text-fcu-accent transition-colors">
+                    <i class="fas fa-share-alt"></i> Social Media
                 </h3>
                 <div class="flex gap-6 justify-center">
                     <a href="https://www.facebook.com/p/FC-Unterensingen-1993-eV-100043269447266/" 
-                       target="_blank" class="text-5xl text-blue-600 hover:text-fcu-primary transition-transform hover:scale-110"
+                       target="_blank" class="text-5xl text-blue-600 hover:text-fcu-primary hover:scale-125 transition-all duration-300"
                        title="FC Unterensingen auf Facebook">
                         <i class="fab fa-facebook"></i>
                     </a>
                     <a href="https://www.instagram.com/fc_unterensingen/" 
-                       target="_blank" class="text-5xl bg-gradient-to-r from-purple-600 via-pink-600 to-orange-500 bg-clip-text text-transparent hover:scale-110 transition-transform"
+                       target="_blank" class="text-5xl bg-gradient-to-r from-purple-600 via-pink-600 to-orange-500 bg-clip-text text-transparent hover:scale-125 transition-all duration-300"
                        title="FC Unterensingen auf Instagram">
                         <i class="fab fa-instagram"></i>
                     </a>
                     <a href="mailto:orga@fcunterensingen.de" 
-                       class="text-5xl text-fcu-primary hover:text-fcu-accent transition-transform hover:scale-110"
+                       class="text-5xl text-fcu-primary hover:text-fcu-accent hover:scale-125 transition-all duration-300"
                        title="E-Mail an FC Unterensingen">
                         <i class="fas fa-envelope"></i>
                     </a>
@@ -528,14 +528,14 @@
         </div>
 
         <!-- Mitglieder Downloads -->
-        <div class="bg-fcu-primary text-white p-12 rounded-lg">
-            <h3 class="text-3xl font-bold mb-4 flex items-center gap-2">
-                <i class="fas fa-file-download"></i> Mitglieder-Downloads
+        <div class="bg-gradient-to-r from-fcu-primary to-fcu-dark text-white p-12 rounded-lg backdrop-filter backdrop-blur-sm hover:shadow-2xl transition-all">
+            <h3 class="text-3xl font-bold mb-4 flex items-center gap-3">
+                <i class="fas fa-file-download text-fcu-accent"></i> Mitglieder-Downloads
             </h3>
             <p class="mb-6 text-gray-200">
                 Alle wichtigen Dokumente für Mitglieder findest du auf der Mitgliederseite - Mitgliedsantrag, Beitragsordnung, Vereinssatzung und mehr.
             </p>
-            <a href="mitglieder.html" class="inline-block bg-fcu-accent text-fcu-dark px-8 py-3 rounded font-bold hover:bg-yellow-400 transition">
+            <a href="mitglieder.html" class="inline-block bg-fcu-accent text-fcu-dark px-8 py-3 rounded font-bold hover:bg-yellow-400 transition-all transform hover:-translate-y-1 hover:shadow-lg">
                 <i class="fas fa-download mr-2"></i> Zu den Downloads
             </a>
         </div>
