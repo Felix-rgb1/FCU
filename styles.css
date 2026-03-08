@@ -45,14 +45,6 @@
 /* Smooth Scrolling */
 html {
     scroll-behavior: smooth;
-    box-sizing: border-box;
-}
-
-/* Box-Sizing für alle Elemente */
-*,
-*::before,
-*::after {
-    box-sizing: inherit;
 }
 
 /* Custom Font Smoothing */
@@ -291,34 +283,18 @@ header.header-scrolled {
 }
 
 /* ============================================
-   LAYOUT & RESPONSIVENESS
+   SECTION SPACING OPTIMIERUNG
    ============================================ */
-
 section {
-    padding: 3rem 1.5rem;
-    position: relative;
+    padding-top: var(--spacing-2xl);
+    padding-bottom: var(--spacing-2xl);
 }
 
-section:not(.bg-fcu-primary):not(.bg-fcu-dark) {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-section.bg-fcu-primary,
-section.bg-fcu-dark {
-    padding: 3rem 1.5rem;
-}
-
-section.bg-fcu-primary > div,
-section.bg-fcu-dark > div {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
+@media (max-width: 768px) {
+    section {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
 }
 
 /* ============================================
