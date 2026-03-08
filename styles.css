@@ -45,6 +45,14 @@
 /* Smooth Scrolling */
 html {
     scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+/* Box-Sizing für alle Elemente */
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
 }
 
 /* Custom Font Smoothing */
@@ -283,18 +291,34 @@ header.header-scrolled {
 }
 
 /* ============================================
-   SECTION SPACING OPTIMIERUNG
+   LAYOUT & RESPONSIVENESS
    ============================================ */
+
 section {
-    padding-top: var(--spacing-2xl);
-    padding-bottom: var(--spacing-2xl);
+    padding: 3rem 1.5rem;
+    position: relative;
 }
 
-@media (max-width: 768px) {
-    section {
-        padding-top: 3rem;
-        padding-bottom: 3rem;
-    }
+section:not(.bg-fcu-primary):not(.bg-fcu-dark) {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section.bg-fcu-primary,
+section.bg-fcu-dark {
+    padding: 3rem 1.5rem;
+}
+
+section.bg-fcu-primary > div,
+section.bg-fcu-dark > div {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 
 /* ============================================
@@ -506,14 +530,27 @@ a::after {
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 0;
-    height: 2px;
-    background: #eab308;
-    transition: width 0.3s ease;
+    right: 0;
+    height: 100px;
+    background: linear-gradient(to top, rgba(255, 255, 255, 0.1), transparent);
+    pointer-events: none;
 }
 
-a:hover::after {
-    width: 100%;
+/* ============================================
+   MODERNE SECTION DIVIDERS
+   ============================================ */
+section {
+    position: relative;
+}
+
+section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(0, 102, 204, 0.3), transparent);
 }
 
 /* Card Shadow Enhancement */
